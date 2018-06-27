@@ -1,0 +1,284 @@
+1 - rails new <nome_meuapp>
+
+2 - Criar projeto para uma versao especifica do rails
+    rails _4.0.0_ new <nome_meuapp>
+
+3 - Criar projeto rails com um banco de dados especifico
+    rails new <nome_meuapp> --database=mysql
+
+    Rails vem como default "sqllite3"
+
+4 - Cria um pojeto rails ignorando o comando bundle / pula
+    rails new <nome_meuapp> -B
+
+5 - Subir a aplicação rails / dentro do projeto (pasta)
+    rails server / rails s
+
+    em serviçcos na nuvem deve ser usado o comando abaixo:
+    rails server -p $PORT -b $IP  (dentro do cloud9)
+    
+    - dependendo do serviço online que estiver usando
+
+6 - Como renomear projeto rails
+    deve ser alteraod os seguintes arquivos:
+        - config/application.rb
+        - config/initializers/session_store.rb
+    Alterando esses arquivos pode ser alterado o nome da pasta principal
+
+    Se estiver usando a versao do rails abaixo da 4.1,
+    usar gem para auxiliar a mudança "Gem rename", pois é necessario alterar muitos arquivo e ela ajuda muitos
+
+==Entendendo estruturas de pastas do rails==
+- app
+    ira trabalhar 90% nessa pasta
+- bin
+    roda script na inicialização do projeto
+- config 
+    configuração do projeto (BD e etc)
+- db
+    configurações do banco de dados / importante arquivos seeds.rb usado para popular o banco de dados
+- lib
+    library - biblioteca que forem ciradas, as tarefas a serem criadas
+- log
+    sao logs dos sistemas, caso ocorra erro é possvel analisar
+- public
+    disponibilizar algo para uso externo
+- test
+    testes da apçicação
+- tmp
+    arquivos temposrarios
+- vendor
+    aplicativos de terceiros (gems) ou assets 
+- rakefile: arquivos que faz o carregando de todas as tarefas
+
+=== Um pouco sobre o Ruby, IRB e Pry ===
+
+- Executar arquivo Ruby
+    ruby meuarquivo.rb
+    touch meuarquivo.rb / cria arquivo na pasta que estruturas
+
+- IRB (Interactive Ruby Shell)
+    serve pra ir fazendo codigo e ir interpretando e vendo o codigo
+
+- PRY (repl - read eval print loop)
+    alternativa para o IRB
+    gem install pry 
+    executar: pry 
+
+Dicas: www.sitepoint.com/rubyists-time-pry-irb/
+
+=== Orientacao OO em uma aula ===
+
+- Variaveis
+    tipos primitivos: inteiro, real, string e true-false (comparacao)
+
+    apenas atribua
+
+    ╭─emerson@emerson-ote ~/workspace/trainne/cursos/curso_ruby_rails ‹ruby-2.4.0› ‹master*› 
+╰─➤  pry
+[1] pry(main)> a = 123
+=> 123
+[2] pry(main)> a
+=> 123
+[3] pry(main)> 
+
+    tipos complexos (classes e objetos): 
+        atributos: caracteritiscas
+        metodos: ações
+
+    No ruby tudo é objetos
+
+[4] pry(main)> b = "Emerson"
+=> "Emerson"
+[5] pry(main)> b.class
+=> String
+[6] pry(main)> a.object_id
+=> 247
+[7] pry(main)> b.object_id
+=> 8152720
+[8] pry(main)> 
+
+
+Quais as vantagens de tudo ser objetos no Ruby?
+    atributos, metodos: super poderosos. 
+    Criar ações a cada objeto.
+
+Outros metodos do Ruby.
+    ex. a.<TAB>
+
+=== Brincando com Ruby  ===
+===part 1===
+    Entrada padrão STDIN (script)
+    Leia algo que foi digitado na tela e faça o que bem entender
+
+    - gets  - Pegar informarção digitada
+
+    - \n  - pula linha
+
+    - chomp - remove o /n  que vem por padrao no gets
+
+    - gets.to_i - Converte para inteiro a string
+
+    - gets.to_s - converte para String
+
+    VER ARQUIVO aula01.rb
+
+===part 2===
+    == Estruturas condicionais == 
+        if, unless, classes
+
+    == Condicional Ternario ==
+    condições feitas em apenas uma linha
+
+    == Operadores Relacionais ==
+    >, >=, <, <=, ==, !=
+
+    == Operadores Aritmeticos ==
+    +, -, *, /, **, %
+
+    == Estrutura de Repetição == 
+    while, until, for, each
+    
+    VER ARQUIVO aula02.rb
+
+=== Vetor / Array ===
+    usando Array 
+        v = [15,62,73,48]
+
+        VER ARQUIVO aula03.rb
+
+    == Argument Vector ARGV ==
+
+        VER ARQUIVO aula04.rb
+        VER ARQUIVO soma.rb
+
+    == Hashes ==
+    Especie de vetor onde eu escolho o nome do indice 
+        Ex. {"a" => 123,"b" => 456}
+
+        VER ARQUIVO aula05.rb
+
+===part 3===
+    Strings - Textos 
+    Interpolar strings e Variaveis
+
+    #{}
+
+    Exemplo Pry
+
+        ╰─➤  pry       
+    [1] pry(main)> x = "Raisl " 
+    => "Raisl "
+    [2] pry(main)> "Ruby on #{x}"
+    => "Ruby on Raisl "
+    [3] pry(main)> y = %w(Emersn Alves Pereira)
+
+    => ["Emersn", "Alves", "Pereira"]
+    [4] pry(main)> y
+    => ["Emersn", "Alves", "Pereira"]
+    [5] pry(main)> 
+
+    === Concatenando Strings ===
+    Ex. puts "Ruby " + "on " + "Rais "
+
+    === Substituindo Strings ===
+    gsub = substitui texto = globalsub
+
+    === Strings x Simbols
+
+        Strings sempre tem "ampas" 
+
+    VER ARQUIVO nomes.rb
+
+===part 4===
+    === Metodos ===
+        ações
+
+
+    VER ARQUIVO metodos.rb
+
+===part 5===
+    === Coisas importantes saber no ruby ===
+
+    
+    ==Uso parenteses==
+        VER ARQUIVO parentenses.rb
+
+    ==constantes==
+        sao usada para representar valores
+    
+        VER ARQUIVO constantes.rb
+
+    ==metodo .slit / .join==
+
+        VER ARQUIVO split-join.rb
+
+    ==Eval==
+        eval ("8+9")
+
+        VER ARQUIVO eval.rb
+
+    ==Metodo Instance of==
+
+        instance_of
+
+        VER ARQUIVO instance_of.rb
+    
+    ==Ranges / Intervalos==
+        (1..2) / (1...5)
+
+        VER ARQUIVO range.rb
+
+===part 6===
+    ==Classes==
+    =Ja sabemos o que é instancia de classe, veja abaixo:
+                            ╰─➤  pry
+                    [1] pry(main)> a = [1,2,3]
+                    => [1, 2, 3]
+                    [2] pry(main)> a.class
+                    => Array
+                    [3] pry(main)> b = Array.new
+                    => []
+                    [4] pry(main)> b.push(4,5,6)
+                    => [4, 5, 6]
+                    [5] pry(main)> b.class
+                    => Array
+                    [6] pry(main)> b.object_id
+                    => 10771140
+                    [7] pry(main)> a.object_id
+                    => 11246560
+                    [8] pry(main)> 
+
+
+    =Como criar classes:
+        class Pessoa
+
+        end
+
+    =variaveis de instancia e o Initiaze
+        @variavel #variavel de instancia
+
+        Initiaze #construtor da classe, boot da classe
+
+        attr_accessor: ...cria virtualmente métodos 2 métodos públicos (atribuir e mostrar) para os atributos informados.
+
+        VER ARQUIVO pessoa.rb
+
+===part 7===
+    ==Classes e Heranças==
+
+                VER Pasta herenca
+
+===part 8===
+    == Modulos / Mixing ==
+        Modulos sao similares a classes
+        dentro do modulos vc consegue ter classes, metodos, constantes etc
+        
+        não é permitido criar objetos dos modulos0
+
+        bons pra armezar constantes em um ligar centralizado
+
+        
+
+
+

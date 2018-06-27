@@ -1,0 +1,51 @@
+<!--Incluir a classe e o atribuno do css fo form_for abaixo: incluindo neste caso html (atributo)-->
+<%= form_for(@contact, html: { class: "basic-grey" }) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h1>New Contact</h1> 
+      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <h1>New Contact</h1>  
+  <!--Incluido aqui dentro-->
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :kind_id %><br>
+    <!--<%= f.text_field :kind_id %> === Remover este cara para nao dar conflito-->
+    <!--Exemplo:-->
+    <!--collection_select(object, method, collection, value_method, text_method, options = {}, html_options = {})-->
+    <!--<Campo>:qual o objeto que vai receber, :qual o campo, de onde vem os dados, :quem eu pego pra guardar o valor, ?e o que eu mostro</Campo>-->
+    <!--Esse variavel vai ter que trazer os dados para vc @king_options_for_select, conversando com o controller e nao direto com o model-->
+    <%= collection_select(:contact, :kind_id, @king_options_for_select, :id, :description)%>
+    
+    
+    <!--Como seria em html-->
+    <!--<select>-->
+    <!--  <option>Residencial</option>-->
+    <!--  <option>Comercio</option>-->
+    <!--</select>-->
+  </div>
+  <div class="field">
+    <%= f.label :rmk %><br>
+    <%= f.text_area :rmk %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Enviar", class: "button" %>
+    <%= link_to 'Back', contacts_path, class: "button-back" %>
+  </div>
+<% end %>

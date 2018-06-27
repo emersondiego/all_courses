@@ -1,0 +1,5 @@
+usando ruby
+
+curso ruby
+
+ruby ARGV
