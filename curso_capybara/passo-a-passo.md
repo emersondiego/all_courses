@@ -238,6 +238,7 @@ Exemplo:
 	end
 	
 CASE WHEN
+
 	case numero
 	when 0
 		puts "Voce digitou zero"
@@ -330,4 +331,186 @@ Exemplo:
 	Until - enquanto for falso vai executar a ação
 
 Exemplo:
+
+While
+
+	i = 1
+	while i <= 10
+		puts "Sou verdadeiro #{i}"
+		i+= 1
+	end
+
+Until
+
+	j = 10
+	until j <= 1
+		puts "Sou falso #{j}"
+		j -= 1
+	end
+
+2 - Vetores e Arrays
+
+	Vetores e Arrays são ordenadas, são coleções indexadas por inteiro de qualquer objeto
+	VETOR = [1,2,3,4,5]
+
+Exemplos:
+
+	vetor[1,2,3,4,5]
+      	0,1,2,3,4
+
+	IRB
+	2.5.0 :003 > vetor = []
+	=> []
+	2.5.0 :004 > vetor
+	=> []
+	2.5.0 :005 > vetor.push(10,2,30)
+	=> [10, 2, 30]
+	2.5.0 :006 > vetor
+	=> [10, 2, 30]
+	2.5.0 :007 > vetor[0]
+	=> 10
+	2.5.0 :008 > vetor[1]
+	=> 2
+
+	Delete	
+
+		2.5.0 :009 > vetor.delete(2)
+		=> 2
+		2.5.0 :010 > vetor
+		=> [10, 30]
+
+
+3 - Hashes
+
+	Um Hash é uma coleção de chaves exclusivas e seus valores. Também chamado de arrays associativos, eles são
+	semelhantes aos arrays, mas conde um array usa inteiro como seu índice, um hash permite que você use 
+	qualquer tipo de objeto
+
+	NOTAS = { "JANE DOE" => 10 , "JIM DOE" = > 6 }
+
+	hash = { "keys" => "valor" }
+
+	hashes = { "a" => "1", "b" => "2" }
+	hashes["a"]
+
+	hashs = { :a=> "123", :b=> "456" }
+	hashes[:a]
+
+Exemplos: 
 	
+	╰─➤  irb
+	2.5.0 :001 > hashes = { "a" => "1", "b" => "2" }
+	=> {"a"=>"1", "b"=>"2"}
+	2.5.0 :002 > hashes["b"]
+	=> "2"
+	2.5.0 :004 > hashs = { :a=> "123", :b=> "456" }
+	=> {:a=>"123", :b=>"456"}
+	2.5.0 :005 > hashs[:a]
+	=> "123"
+	2.5.0 :006 > hashs[:b]
+	=> "456"
+
+4 - Iterador Each
+
+	O iterador de cada retorna todos os elementos de uma matriz ou um hash.
+
+	ary = [1,2,3,4]
+
+	ary.each do |i|
+		puts i
+	end
+
+Exemplo: 
+
+	vetor = [1,2,3,4,5]
+
+	vetor.each do |i|
+		puts i
+	end
+
+5 - Simbolos
+
+	- :A = Qualquer caracter que tenha dois pontos
+ 	- É uma string estática, que não muda de valor de memória
+	- Muito usado para ser um identificador
+	- "ABC".to_sym - Transforma a string em simbolo
+
+6 - Operador de intervalo
+
+	Vai de um número ao outro sem precisar de um array
+
+	Com ... ele vai até o penúltimo elemento Ex. (1...5) - Vai de 1 a 4 
+	Com .. ele vai até o último elemento Ex. (1..5) - Vai de 1 a 5
+
+Exemplos:
+
+	(1...5).each do |i|
+  		puts i
+	end
+
+	(1..5).each do |i|
+		puts i
+	end
+
+7 - Times
+
+	Escolhe a quantidade de vezes que vicê quer que repita
+		5.times {puts "Emerson"}
+
+Exemplo:
+
+	5.times {puts "Emerson"}
+
+### AULA 10 - O que é Orientação Objetos
+
+1 - Teoria
+
+	É o um conceirto que esta relacionado com a ideia de classificar, organizar e abstrair coisas
+
+2 - Classe
+
+	Representa-se a classe como um projeto do objeto;
+	Objeto é a instancia de uma classe
+
+Exemplo
+
+		Tipo/Classe
+		Cachorro								
+		============
+		Atributos/Variaveis
+		tamanho: int									
+		raça: string
+		============
+		Açoes/Metodos
+		latir()
+
+3 - Herança
+
+	O conceito de herança é um dos principais pilares na OO, ou seja, qualquer linguagem orientada a objetos,
+	possui herença. As vantagens da utilização de herança pode diminuir a quantidade de código escrito no inicio do desenvolvimento do projeto. É chamada de subclasse uma classe que herda os membros de uma classe superior a ela, sendo ela a superclasse.
+
+	Superclasse > Fornece membros a outras classes subclasses -> herda membros da subclasse
+
+4 - Encapsular
+
+	Significa separar o programa em partes o mais isoladas possivel, ouseja protege os atributos nào deixando ser
+	visivel a outras classes.
+
+Exemplos: 
+
+	- private: não pode ser acessado de fora da classe, nem mesmo por alguma classe derivada da classe base
+	- protected: nao pode ser acessadafora da clsse, porem pode estar disponivel para outras classes derivadas da classe base
+	- internal: 'so é visivel na unidade de codigo onde o mesmo é definido. É um meio termo entre public e protected, uma vez qye o membro pode ser acesso por todas as classes definidas na mesma undade
+	- Protected-internal: tipo de codigo a partir de derivados ou de codigo da mesma assembleia, Combinação de protegidos ou internos
+	- public: torna o membro acessivel de fora da definição da classe
+
+5 - Polimorfismo
+
+	É a capacidade que os objetos possuem, de agir de forma quase totalmente difenrenciada mesmo que possouem a mesma origem, significa muitas formas, pode se enviar uma mensagem para diferentes objetos e faze-los responder da maneira correta.
+
+	Sobrecarga de metodo - realiza a tarefa com distintos parametros de entrada,
+	Ex. posso ter dois metodos chamado com o mesmo nome mas com comportamentos diferentes e paramentos diferentes
+
+	Sobrescrita de metodo - metodos com o mesmo nome, mesma assinatura, comprtamentos diferentes, mas em classes diferentes e originadas de uma classe pai.
+	
+### AULA 11 - Orientação Objeto (Parte 1)
