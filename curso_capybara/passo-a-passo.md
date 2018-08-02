@@ -514,3 +514,171 @@ Exemplos:
 	Sobrescrita de metodo - metodos com o mesmo nome, mesma assinatura, comprtamentos diferentes, mas em classes diferentes e originadas de uma classe pai.
 	
 ### AULA 11 - Orientação Objeto (Parte 1)
+
+1 - Classes 
+
+ Uma classe é composta por atributos e metodos e construtores 
+
+Exemplo "arquivo.rb":
+
+	### class 1 ###
+	class ClassName
+		attr_accessor :nome  # igual get e seter dojava (ler / escrever)
+		# attr_reader :nomeone # só permite eu ler
+		# attr_writer :nometwo # só permite escrever 
+
+		#### attr_accessor begin ####
+		# def :nome
+		#   @nome
+		# end
+
+		# def nome=(nome)
+		#   @nome = :nome
+		# end
+		#### attr_accessor end ####
+
+		### metodo begin ###
+		def metodo
+			puts 'Corpo do metodo'
+		end
+		### metodo end ###
+
+		def metodo_composto
+			puts 'Corpo do metodo composto'
+		end
+	end
+
+	### class 2 Herança ###
+	class Heranca < ClassName
+	end
+
+	### Executa classes ###
+	obj = ClassName.new 
+	obj.nome = "Emerson"
+	puts obj.nome 
+	obj.metodo
+	obj.metodo_composto
+
+	obj_heranca = Heranca.new
+	obj_heranca.metodo_composto
+
+Saída Terminal
+
+	╰─➤ ruby classes.rb
+	Emerson
+	Corpo do metodo
+	Corpo do metodo composto
+	Corpo do metodo composto
+
+### AULA 12 - Orientação Objeto (Parte 2)
+
+1 - Overrinding
+
+	É o recurso de linguagem que permite 	que uma subclasse forneça uma implementação especifica de um metodo que ja é fornecido por uma de sua superclasses. A implementacao na subclasse substitui a implementação na superclasse.
+
+Exemplo:
+
+	### arquivo.rb ###
+	class ClassMae
+		def correr
+			puts "A mae corre!!"
+		end
+	end
+
+	class ClassFilha < ClassMae
+
+		# mesmo metodo da classMae, com isso o primeiro metodo é subscrito por o da ClassFilha
+
+		def correr
+			puts "A filha corre!!"
+		end
+	end
+
+	obj = ClassFilha.new
+	obj.correr
+
+2 - Super
+
+	O Super serve basicament para invocar o metodo correspondente da classe pai.
+
+Exemplo:
+
+	class ClassMae
+		def correr
+			puts "A mae corre!!"
+		end
+	end
+
+	class ClassFilha < ClassMae
+		def correr
+			# considerada os dois metodos, e não sobrescreve o metodo anterior
+			puts super
+			puts "Cansei!!!"
+		end
+	end
+
+	obj = ClassFilha.new
+	obj.correr
+
+### AULA 13 - Orientação Objeto (Parte 3)
+
+1 - Modulos
+
+	São uma maneira de agrupar metodos, classes e constantes. Os modulos oferecem dois grandes beneficios.
+	Fornecem um NAMESPACE e evitam confrontos de nomes.
+	Também implementam a facilidade MIXIN os modulos definem um NAMESPACE, uma caixa de proteção na qual seus metodos e constantes podem ser reproduzidos sem ter que se preocupar em ser pisado por outros metodos e constantes.
+
+Exemplo:
+
+	# agrupa classes
+	# agrupa constantes
+	# agrupa metodos
+	# ele é muito parecido com classe
+	# ele não pode ser instanciado
+	# nao pode ser herdado
+	
+	module ModuloNome
+		def metodo_padrao
+			puts "Eu sou um Modulo"
+		end
+	end
+
+	class ClassName
+		include ModuloNome 
+	end
+
+	obj = ClassName.new
+	obj.metodo_padrao
+
+2 - Polimorfismo
+
+Exemplo: 
+
+	class Cachorro
+		def latir
+			puts "Au Au Au!!"
+		end
+	end 
+
+	class CachorroGrande
+		def latir
+			puts "AU AU!!"
+		end
+	end
+
+	class Pessoa
+		def agarra_cachorro(cachorro)
+			cachorro.latir
+		end
+	end
+
+	c1 = Cachorro.new
+	c2 = CachorroGrande.new
+	p = Pessoa.new
+
+	p.agarra_cachorro(c1)
+	p.agarra_cachorro(c2)
+
+### AULA 14 - O que é BDD
+
+	
