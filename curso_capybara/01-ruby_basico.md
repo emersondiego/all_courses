@@ -678,7 +678,4 @@ Exemplo:
 
 	p.agarra_cachorro(c1)
 	p.agarra_cachorro(c2)
-
-### AULA 14 - O que é BDD
-
 	
