@@ -1,681 +1,806 @@
 # Curso de Automação de Testes com Capybara, Cucumber e Ruby
 
-### AULA 3  - Conf. Linux
+## AULA 3  - Conf. Linux
 
+```
 Default 
 
-	sudo apt-get update
+sudo apt-get update
 
-	Atualizar dependencias
+Atualizar dependencias:
 
-	sudo apt-get install autoconfbison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-de
-	
+sudo apt-get install autoconfbison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-de
+```	
 
 1 - Instalar git
 
-	sudo apt-get install git
+```
+sudo apt-get install git
+```
 
 2 - Instalar gerenciador de versões do Ruby
 
-	git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-	echo 'export path="$home/.rbenv/bin:$path"' >> ~/.bashrc
-	echo 'eval"$(rbenvinit-)"' >> ~/.bashrc
-	source ~/.bashrc
+```
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export path="$home/.rbenv/bin:$path"' >> ~/.bashrc
+echo 'eval"$(rbenvinit-)"' >> ~/.bashrc
+source ~/.bashrc
+```
 
 3 - Instalar o Ruby Build - Facilitador de instação do Ruby
 
-	git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+```
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+```
 
 4 - Instalar versões do Ruby    
 
-	rbenv install -l 
-	rbenv install 2.4.2
-	rbenv global 2.4.2
-	ruby -v
+```
+rbenv install -l 
+rbenv install 2.4.2
+rbenv global 2.4.2
+ruby -v
+```
 
 5 - Instalar o bundler - controladora de depêndencias do Ruby
 
-	gem install bundler
+```
+gem install bundler
+```
 
-### AULA 4 - Conf. MAC
+## AULA 4 - Conf. MAC
+
 1 - Instalar o Homebrew (mac ja vem com ruby instalado - versao antiga)
 
-	ruby-e "$(curl-fsslhttps://raw.githubusercontent.com/homebrew/install/master/install)"
+```
+ruby-e "$(curl-fsslhttps://raw.githubusercontent.com/homebrew/install/master/install)"
+```
 
 2 - Instalar o Rbenv
 
-	brew install rbenv ruby-build
-	echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
-	source ~/.bash_profile
+```
+brew install rbenv ruby-build
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+source ~/.bash_profile
+```
 
 3 - Instalar versão do ruby
 
-	rbenv install 2.4.2 
-	rbenv global 2.4.2
-	ruby -v
+```
+rbenv install 2.4.2 
+rbenv global 2.4.2
+ruby -v
+```
 
 4 - Instalar o Bundler 
 
-	gem install bundler
+```
+gem install bundler
+```
 
-### AULA 5 - Instalando VSCODE e plugins
-	Instalar o plugin ruby (Peng Lv)
-	Instalar o plugin do cucumber - (Aravind Kumar e Euclidity)
-	Instalar o plugin vscode icons (Roberto Huertas)
+## AULA 5 - Instalando VSCODE e plugins
 
-### AULA 6 - O que é Ruby
+```
+Instalar o plugin ruby (Peng Lv)
+Instalar o plugin do cucumber - (Aravind Kumar e Euclidity)
+Instalar o plugin vscode icons (Roberto Huertas)
+```
 
-	Teoria - Ver video
+## AULA 6 - O que é Ruby
 
-### AULA 7 - Ruby básico (parte 1)
+* [RUBY](https://pt.wikipedia.org/wiki/Ruby_(linguagem_de_programa%C3%A7%C3%A3o))
 
-	IRB - Console onde podemos executar ações/ testar, etc
+## AULA 7 - Ruby básico (parte 1)
+
+```
+IRB - Console onde podemos executar ações/ testar, etc
+```
 
 Tipo de Variaveis:
 
-	Inteiro
-	Float
-	String
-	boleano   
+``
+Inteiro
+Float
+String
+boleano  
+`` 
 
 1 - Primeiro código
 
-	Dentro irb:
-	puts "Hello World"  
+```
+Dentro irb:
+puts "Hello World"  
+```
 
 2 - Operadores Simples
 
-	+ adição
-	- subtração
-	* multiplicação
-	/ divisao
-	% modulo (pega o resto da divisao)
-	** exponenciação (2 elevado a 2)
+```
++ adição
+- subtração
+* multiplicação
+/ divisao
+% modulo (pega o resto da divisao)
+** exponenciação (2 elevado a 2)
+```
 
 Exemplos:
 
-	puts 2 + 2
-	puts 2 - 2
-	puts 2 * 2
-	puts 10 / 2
-	puts 11 % 2
-	puts 2 ** 2
+```ruby
+puts 2 + 2
+puts 2 - 2
+puts 2 * 2
+puts 10 / 2
+puts 11 % 2
+puts 2 ** 2
+```
 
 3 - Gets e Puts
 
-	GETS - sever para ler tudo que é inserido
-	PUTS - imprimi resultado na tela
+```
+GETS - sever para ler tudo que é inserido
+PUTS - imprimi resultado na tela
+```
 
 Exemplo:
 
-	puts "Meu nome é: "
-	variavel = gets.chomp
-	puts "O meu nome é #{variavel}."
+```ruby
+puts "Meu nome é: "
+variavel = gets.chomp
+puts "O meu nome é #{variavel}."
+```
 
 4 - Interpolação
 
-	interpolação = 1
+```
+interpolação = 1
 
-	#{interpolação}
+#{interpolação}
+```
 
 Exemplo: 
 
-	variavel = "Emerson"
+```ruby
+variavel = "Emerson"
 
-	puts "Ola #{variavel}"
+puts "Ola #{variavel}"
 
-	puts "Ola " << variavel
+puts "Ola " << variavel
 
-	variavel_inteira = 2
-	variavel_string = "Total é:"
+variavel_inteira = 2
+variavel_string = "Total é:"
 
-	puts "#{variavel_string} #{variavel_inteira}"
+puts "#{variavel_string} #{variavel_inteira}"
+```
 
 5 - Coersão Cast
 
-	to_i - converte em inteiro
-	to_f - converte em float
-	to_s - converte em string
-	to_a - converte em array
-	to_sym - converte em simbolo
+```
+to_i - converte em inteiro
+to_f - converte em float
+to_s - converte em string
+to_a - converte em array
+to_sym - converte em simbolo
+```
 
 Exemplo:
 
-	variavel = "1"
-	variavel2 = 2
-	puts variavel.to_i + variavel2
+```ruby
+variavel = "1"
+variavel2 = 2
+puts variavel.to_i + variavel2
+```
 
-### AULA 8 - Ruby básico (parte 2)
+## AULA 8 - Ruby básico (parte 2)
+
 1 - Operadores relacionais
 
-	> Maior
-	< Menor
-	>= Maior ou igual
-	<= Menor ou igual
-	== igual
-	!= diferente 
-	<=> Spaceship (O resultado disso sempre da:
-		-1 (Quando o elemento da direita é maior que a esquerda)
-		0 (Quando os elementos são iguais) e
-		1 (Quando o elemento da esqueda é maior que o da direita)
-	) 
+```
+> Maior
+< Menor
+>= Maior ou igual
+<= Menor ou igual
+== igual
+!= diferente 
+<=> Spaceship (O resultado disso sempre da:
+	-1 (Quando o elemento da direita é maior que a esquerda)
+	0 (Quando os elementos são iguais) e
+	1 (Quando o elemento da esqueda é maior que o da direita)
+) 
+```
 
 Exemplos:
 
-	puts  "2 é maior que 1 #{2>1}" #true
-	puts  "2 é menor que 1 #{2<1}"  #false
-	puts  "2 é igual a 2 #{2 == 2}" #true
-	puts  "2 for maior igual 1 #{2>=1}" #true 
-	puts  "2 for menor igual a 1 #{2<=1}" #false 
-	puts  "2 for diferente de 1 #{2 !=1 }" #true
-	puts  "Lado esquerdo for menor que o lado direito #{2 <=> 3}" #-1
-	puts  "Lado esuqedo for igual ao direito #{2 <=> 2}" #0
-	puts  "Lado esuqedo maior que o direiro #{3 <=> 2}" #1
+```ruby
+puts  "2 é maior que 1 #{2>1}" #true
+puts  "2 é menor que 1 #{2<1}"  #false
+puts  "2 é igual a 2 #{2 == 2}" #true
+puts  "2 for maior igual 1 #{2>=1}" #true 
+puts  "2 for menor igual a 1 #{2<=1}" #false 
+puts  "2 for diferente de 1 #{2 !=1 }" #true
+puts  "Lado esquerdo for menor que o lado direito #{2 <=> 3}" #-1
+puts  "Lado esuqedo for igual ao direito #{2 <=> 2}" #0
+puts  "Lado esuqedo maior que o direiro #{3 <=> 2}" #1
+```
 
 2 - Operadores de atribuição
 
-	A = A + 4 - Atribui um valir a uma variavel
-	A += 4 - Equivale "A = A + 4" 
-	A -= 4 - Equivale "A = A - 4" 
-	A *= 4 - Equivale "A = A * 4"
-	A %= 4 - Equivale "A = A % 4" 
-	A /= 4 - Equivale "A = A / 4" 
-	A **= 4 - Equivale "A = A ** 4" 
+```
+A = A + 4 - Atribui um valir a uma variavel
+A += 4 - Equivale "A = A + 4" 
+A -= 4 - Equivale "A = A - 4" 
+A *= 4 - Equivale "A = A * 4"
+A %= 4 - Equivale "A = A % 4" 
+A /= 4 - Equivale "A = A / 4" 
+A **= 4 - Equivale "A = A ** 4" 
+```
 
 Exemplos:
 
-	a = 2 
-	# a = a + 1
-	a += 1
-	puts a
+```ruby
+a = 2 
+# a = a + 1
+a += 1
+puts a
 
-	b = 2
-	# b = b + 1
-	b -= 1 #maneira mais facil de passar
-	puts b
-	...
+b = 2
+# b = b + 1
+b -= 1 #maneira mais facil de passar
+puts b
+...
+```
 
 3 - Estrutura de Condicionais
 
 IF
 
-	if (condicao 1)
-		instrucao 1
-	else
-		instrucao 2
-	end
+```
+if (condicao 1)
+	instrucao 1
+else
+	instrucao 2
+end
+```
 
 Exemplo: 
-	puts "Digite um 1 ou 2"
 
-	v1 = gets.to_i
+```ruby
+puts "Digite um 1 ou 2"
 
-	if v1 == 1
-		puts "O valor é 1"
-	elsif v1 == 2
-		puts "O valor é 2"
-	else
-		puts "Valor nao é igual a 1 ou 2"
-	end
+v1 = gets.to_i
+
+if v1 == 1
+	puts "O valor é 1"
+elsif v1 == 2
+	puts "O valor é 2"
+else
+	puts "Valor nao é igual a 1 ou 2"
+end
+```
 
 UNLESS - se condição for falsa
 
-	unless (condicao)
-		instrucao 1
-	else 
-		instrucao 2
-	end
+```
+unless (condicao)
+	instrucao 1
+else 
+	instrucao 2
+end
+```
 
 Exemplo:
 
-	puts "Digite um numero....."
-	v2 = gets.to_i
+```ruby
+puts "Digite um numero....."
+v2 = gets.to_i
 
-	unless v2 == 2
-		puts "Condicao falsa"
-	else
-		puts "Condicão verdadeira"
-	end
+unless v2 == 2
+	puts "Condicao falsa"
+else
+	puts "Condicão verdadeira"
+end
+```
 	
 CASE WHEN
 
-	case numero
-	when 0
-		puts "Voce digitou zero"
-	when 1..20 
-		puts "Digitou entre 1 a 20"
-	when 21..70
-		puts "Digitou entre 21 a 70"
-	else 
-		puts "Voce nao digitou um numero"
-	end
+```
+case numero
+when 0
+	puts "Voce digitou zero"
+when 1..20 
+	puts "Digitou entre 1 a 20"
+when 21..70
+	puts "Digitou entre 21 a 70"
+else 
+	puts "Voce nao digitou um numero"
+end
+```
 
 Exemplo: 
 
-	puts "Digite um numero....."
-	v3 = gets.to_i
+```ruby
+puts "Digite um numero....."
+v3 = gets.to_i
 
-	case v3
-	when 0
-		puts "Voce digitou zero"
-	when 1..20 
-		puts "Digitou entre 1 a 20"
-	when 21..70
-		puts "Digitou entre 21 a 70"
-	else 
-		puts "Voce nao digitou um numero"
-	end
+case v3
+when 0
+	puts "Voce digitou zero"
+when 1..20 
+	puts "Digitou entre 1 a 20"
+when 21..70
+	puts "Digitou entre 21 a 70"
+else 
+	puts "Voce nao digitou um numero"
+end
+```
 
 4 - Operadores Logicos
 
-	&& equivale a "E"
-	|| equivale a "OU"
-	! equivale a "NEGACAO"
+```
+&& equivale a "E"
+|| equivale a "OU"
+! equivale a "NEGACAO"
 
-	boleano (true ou false)
+boleano (true ou false)
+```
 
 Exemplo:
 
-	l1 = 1
-	l2 = 2
-	l3 = 3
-	l4 = 4
+```ruby
+l1 = 1
+l2 = 2
+l3 = 3
+l4 = 4
 
-	puts ">>>>>> Retorna Verdadeiro"
-
-
-	if (l1 < l2) && (l3 < l4)
-		puts "Condicão atendida pelos dois casos"
-	else
-		puts "Condicão não atendida"
-	end 
-
-	puts ">>>>>> Retorna Falso"
-
-	if (l1 < l2) && (l3 > l4)
-		puts "Condicão atendida pelos dois casos"
-	else
-		puts "Condicão não atendida"
-	end 
+puts ">>>>>> Retorna Verdadeiro"
 
 
-	puts ">>>>>> Uma das duas precisa dar verdadeira pra dar como atendida"
+if (l1 < l2) && (l3 < l4)
+	puts "Condicão atendida pelos dois casos"
+else
+	puts "Condicão não atendida"
+end 
 
-	if (l1 < l2) || (l3 > l4)
-		puts "Condicão por um dos casos"
-	else
-		puts "Condicão não atendida"
-	end 
+puts ">>>>>> Retorna Falso"
 
-	puts ">>>>>> Duas conducões invalidas"
+if (l1 < l2) && (l3 > l4)
+	puts "Condicão atendida pelos dois casos"
+else
+	puts "Condicão não atendida"
+end 
 
-	if (l1 > l2) || (l3 > l4)
-		puts "Condicão por um dos casos"
-	else
-		puts "Condicão não atendida"
-	end 
 
-	puts ">>>>>> NEGANDO" 
+puts ">>>>>> Uma das duas precisa dar verdadeira pra dar como atendida"
 
-	if !(l3 < l4)
-		puts "Negação atendida"
-	else
-		puts "Negação não atendida"
-	end
+if (l1 < l2) || (l3 > l4)
+	puts "Condicão por um dos casos"
+else
+	puts "Condicão não atendida"
+end 
 
-### AULA 9 - Ruby básico (parte 3)
+puts ">>>>>> Duas conducões invalidas"
+
+if (l1 > l2) || (l3 > l4)
+	puts "Condicão por um dos casos"
+else
+	puts "Condicão não atendida"
+end 
+
+puts ">>>>>> NEGANDO" 
+
+if !(l3 < l4)
+	puts "Negação atendida"
+else
+	puts "Negação não atendida"
+end
+```
+
+## AULA 9 - Ruby básico (parte 3)
 
 1 - Estrutura de repetição
 
-	While - enquanto o teste for verdadeiro vai fazer o bloco de repetição
-	Until - enquanto for falso vai executar a ação
+```
+While - enquanto o teste for verdadeiro vai fazer o bloco de repetição
+Until - enquanto for falso vai executar a ação
+```
 
 Exemplo:
 
 While
 
-	i = 1
-	while i <= 10
-		puts "Sou verdadeiro #{i}"
-		i+= 1
-	end
+```ruby
+i = 1
+while i <= 10
+	puts "Sou verdadeiro #{i}"
+	i+= 1
+end
+```
 
 Until
 
-	j = 10
-	until j <= 1
-		puts "Sou falso #{j}"
-		j -= 1
-	end
+```ruby
+j = 10
+until j <= 1
+	puts "Sou falso #{j}"
+	j -= 1
+end
+```
 
 2 - Vetores e Arrays
 
-	Vetores e Arrays são ordenadas, são coleções indexadas por inteiro de qualquer objeto
-	VETOR = [1,2,3,4,5]
+```
+Vetores e Arrays são ordenadas, são coleções indexadas por inteiro de qualquer objeto
+VETOR = [1,2,3,4,5]
+```
 
 Exemplos:
 
-	vetor[1,2,3,4,5]
-      	0,1,2,3,4
+```
+vetor[1,2,3,4,5]
+			0,1,2,3,4
 
-	IRB
-	2.5.0 :003 > vetor = []
-	=> []
-	2.5.0 :004 > vetor
-	=> []
-	2.5.0 :005 > vetor.push(10,2,30)
-	=> [10, 2, 30]
-	2.5.0 :006 > vetor
-	=> [10, 2, 30]
-	2.5.0 :007 > vetor[0]
-	=> 10
-	2.5.0 :008 > vetor[1]
-	=> 2
+IRB
+2.5.0 :003 > vetor = []
+=> []
+2.5.0 :004 > vetor
+=> []
+2.5.0 :005 > vetor.push(10,2,30)
+=> [10, 2, 30]
+2.5.0 :006 > vetor
+=> [10, 2, 30]
+2.5.0 :007 > vetor[0]
+=> 10
+2.5.0 :008 > vetor[1]
+=> 2
 
 	Delete	
 
-		2.5.0 :009 > vetor.delete(2)
-		=> 2
-		2.5.0 :010 > vetor
-		=> [10, 30]
-
+	2.5.0 :009 > vetor.delete(2)
+	=> 2
+	2.5.0 :010 > vetor
+	=> [10, 30]
+```
 
 3 - Hashes
 
-	Um Hash é uma coleção de chaves exclusivas e seus valores. Também chamado de arrays associativos, eles são
-	semelhantes aos arrays, mas conde um array usa inteiro como seu índice, um hash permite que você use 
-	qualquer tipo de objeto
+```
+Um Hash é uma coleção de chaves exclusivas e seus valores. Também chamado de arrays associativos, eles são
+semelhantes aos arrays, mas conde um array usa inteiro como seu índice, um hash permite que você use 
+qualquer tipo de objeto
 
-	NOTAS = { "JANE DOE" => 10 , "JIM DOE" = > 6 }
+NOTAS = { "JANE DOE" => 10 , "JIM DOE" = > 6 }
 
-	hash = { "keys" => "valor" }
+hash = { "keys" => "valor" }
 
-	hashes = { "a" => "1", "b" => "2" }
-	hashes["a"]
+hashes = { "a" => "1", "b" => "2" }
+hashes["a"]
 
-	hashs = { :a=> "123", :b=> "456" }
-	hashes[:a]
+hashs = { :a=> "123", :b=> "456" }
+hashes[:a]
+```
 
 Exemplos: 
-	
-	╰─➤  irb
-	2.5.0 :001 > hashes = { "a" => "1", "b" => "2" }
-	=> {"a"=>"1", "b"=>"2"}
-	2.5.0 :002 > hashes["b"]
-	=> "2"
-	2.5.0 :004 > hashs = { :a=> "123", :b=> "456" }
-	=> {:a=>"123", :b=>"456"}
-	2.5.0 :005 > hashs[:a]
-	=> "123"
-	2.5.0 :006 > hashs[:b]
-	=> "456"
+
+```	
+╰─➤  irb
+2.5.0 :001 > hashes = { "a" => "1", "b" => "2" }
+=> {"a"=>"1", "b"=>"2"}
+2.5.0 :002 > hashes["b"]
+=> "2"
+2.5.0 :004 > hashs = { :a=> "123", :b=> "456" }
+=> {:a=>"123", :b=>"456"}
+2.5.0 :005 > hashs[:a]
+=> "123"
+2.5.0 :006 > hashs[:b]
+=> "456"
+```
 
 4 - Iterador Each
 
-	O iterador de cada retorna todos os elementos de uma matriz ou um hash.
+```
+O iterador de cada retorna todos os elementos de uma matriz ou um hash.
 
-	ary = [1,2,3,4]
+ary = [1,2,3,4]
 
-	ary.each do |i|
-		puts i
-	end
+ary.each do |i|
+	puts i
+end
+```
 
 Exemplo: 
 
-	vetor = [1,2,3,4,5]
+```ruby
+vetor = [1,2,3,4,5]
 
-	vetor.each do |i|
-		puts i
-	end
+vetor.each do |i|
+	puts i
+end
+```
 
 5 - Simbolos
 
-	- :A = Qualquer caracter que tenha dois pontos
- 	- É uma string estática, que não muda de valor de memória
-	- Muito usado para ser um identificador
-	- "ABC".to_sym - Transforma a string em simbolo
+- :A = Qualquer caracter que tenha dois pontos
+- É uma string estática, que não muda de valor de memória
+- Muito usado para ser um identificador
+- "ABC".to_sym - Transforma a string em simbolo
 
 6 - Operador de intervalo
 
-	Vai de um número ao outro sem precisar de um array
+```
+Vai de um número ao outro sem precisar de um array
 
-	Com ... ele vai até o penúltimo elemento Ex. (1...5) - Vai de 1 a 4 
-	Com .. ele vai até o último elemento Ex. (1..5) - Vai de 1 a 5
+Com ... ele vai até o penúltimo elemento Ex. (1...5) - Vai de 1 a 4 
+Com .. ele vai até o último elemento Ex. (1..5) - Vai de 1 a 5
+```
 
 Exemplos:
 
-	(1...5).each do |i|
-  		puts i
-	end
-
-	(1..5).each do |i|
+```ruby
+(1...5).each do |i|
 		puts i
-	end
+end
+
+(1..5).each do |i|
+	puts i
+end
+```
 
 7 - Times
 
-	Escolhe a quantidade de vezes que vicê quer que repita
-		5.times {puts "Emerson"}
+```
+Escolhe a quantidade de vezes que vicê quer que repita
+5.times {puts "Emerson"}
+```
 
 Exemplo:
 
-	5.times {puts "Emerson"}
+```ruby
+5.times {puts "Emerson"}
+```
 
-### AULA 10 - O que é Orientação Objetos
+## AULA 10 - O que é Orientação Objetos
 
 1 - Teoria
 
-	É o um conceirto que esta relacionado com a ideia de classificar, organizar e abstrair coisas
+```
+É o um conceito que esta relacionado com a ideia de classificar, organizar e abstrair coisas
+```
 
 2 - Classe
 
-	Representa-se a classe como um projeto do objeto;
-	Objeto é a instancia de uma classe
+```
+Representa-se a classe como um projeto do objeto;
+Objeto é a instancia de uma classe
+```
 
 Exemplo
 
-		Tipo/Classe
-		Cachorro								
-		============
-		Atributos/Variaveis
-		tamanho: int									
-		raça: string
-		============
-		Açoes/Metodos
-		latir()
+```
+Tipo/Classe
+Cachorro								
+============
+Atributos/Variaveis
+tamanho: int									
+raça: string
+============
+Açoes/Metodos
+latir()
+```
 
 3 - Herança
 
-	O conceito de herança é um dos principais pilares na OO, ou seja, qualquer linguagem orientada a objetos,
-	possui herença. As vantagens da utilização de herança pode diminuir a quantidade de código escrito no inicio do desenvolvimento do projeto. É chamada de subclasse uma classe que herda os membros de uma classe superior a ela, sendo ela a superclasse.
+```
+O conceito de herança é um dos principais pilares na OO, ou seja, qualquer linguagem orientada a objetos,
+possui herença. As vantagens da utilização de herança pode diminuir a quantidade de código escrito no inicio do desenvolvimento do projeto. É chamada de subclasse uma classe que herda os membros de uma classe superior a ela, sendo ela a superclasse.
 
-	Superclasse > Fornece membros a outras classes subclasses -> herda membros da subclasse
+Superclasse > Fornece membros a outras classes subclasses -> herda membros da subclasse
+```
 
 4 - Encapsular
 
-	Significa separar o programa em partes o mais isoladas possivel, ouseja protege os atributos nào deixando ser
-	visivel a outras classes.
+```
+Significa separar o programa em partes o mais isoladas possivel, ouseja protege os atributos nào deixando ser
+visivel a outras classes.
+```
 
 Exemplos: 
 
-	- private: não pode ser acessado de fora da classe, nem mesmo por alguma classe derivada da classe base
-	- protected: nao pode ser acessadafora da clsse, porem pode estar disponivel para outras classes derivadas da classe base
-	- internal: 'so é visivel na unidade de codigo onde o mesmo é definido. É um meio termo entre public e protected, uma vez qye o membro pode ser acesso por todas as classes definidas na mesma undade
-	- Protected-internal: tipo de codigo a partir de derivados ou de codigo da mesma assembleia, Combinação de protegidos ou internos
-	- public: torna o membro acessivel de fora da definição da classe
+- private: não pode ser acessado de fora da classe, nem mesmo por alguma classe derivada da classe base
+- protected: nao pode ser acessadafora da clsse, porem pode estar disponivel para outras classes derivadas da classe base
+- internal: 'so é visivel na unidade de codigo onde o mesmo é definido. É um meio termo entre public e protected, uma vez qye o membro pode ser acesso por todas as classes definidas na mesma undade
+- Protected-internal: tipo de codigo a partir de derivados ou de codigo da mesma assembleia, Combinação de protegidos ou internos
+- public: torna o membro acessivel de fora da definição da classe
 
 5 - Polimorfismo
 
-	É a capacidade que os objetos possuem, de agir de forma quase totalmente difenrenciada mesmo que possouem a mesma origem, significa muitas formas, pode se enviar uma mensagem para diferentes objetos e faze-los responder da maneira correta.
+```
+É a capacidade que os objetos possuem, de agir de forma quase totalmente difenrenciada mesmo que possouem a mesma origem, significa muitas formas, pode se enviar uma mensagem para diferentes objetos e faze-los responder da maneira correta.
 
-	Sobrecarga de metodo - realiza a tarefa com distintos parametros de entrada,
-	Ex. posso ter dois metodos chamado com o mesmo nome mas com comportamentos diferentes e paramentos diferentes
+Sobrecarga de metodo - realiza a tarefa com distintos parametros de entrada,
+Ex. posso ter dois metodos chamado com o mesmo nome mas com comportamentos diferentes e paramentos diferentes
 
-	Sobrescrita de metodo - metodos com o mesmo nome, mesma assinatura, comprtamentos diferentes, mas em classes diferentes e originadas de uma classe pai.
+Sobrescrita de metodo - metodos com o mesmo nome, mesma assinatura, comprtamentos diferentes, mas em classes diferentes e originadas de uma classe pai.
+```
 	
-### AULA 11 - Orientação Objeto (Parte 1)
+## AULA 11 - Orientação Objeto (Parte 1)
 
 1 - Classes 
 
- Uma classe é composta por atributos e metodos e construtores 
+```
+Uma classe é composta por atributos e metodos e construtores
+```
 
 Exemplo "arquivo.rb":
 
-	### class 1 ###
-	class ClassName
-		attr_accessor :nome  # igual get e seter dojava (ler / escrever)
-		# attr_reader :nomeone # só permite eu ler
-		# attr_writer :nometwo # só permite escrever 
+```ruby
+### class 1 ###
+class ClassName
+	attr_accessor :nome  # igual get e seter dojava (ler / escrever)
+	# attr_reader :nomeone # só permite eu ler
+	# attr_writer :nometwo # só permite escrever 
 
-		#### attr_accessor begin ####
-		# def :nome
-		#   @nome
-		# end
+	#### attr_accessor begin ####
+	# def :nome
+	#   @nome
+	# end
 
-		# def nome=(nome)
-		#   @nome = :nome
-		# end
-		#### attr_accessor end ####
+	# def nome=(nome)
+	#   @nome = :nome
+	# end
+	#### attr_accessor end ####
 
-		### metodo begin ###
-		def metodo
-			puts 'Corpo do metodo'
-		end
-		### metodo end ###
-
-		def metodo_composto
-			puts 'Corpo do metodo composto'
-		end
+	### metodo begin ###
+	def metodo
+		puts 'Corpo do metodo'
 	end
+	### metodo end ###
 
-	### class 2 Herança ###
-	class Heranca < ClassName
+	def metodo_composto
+		puts 'Corpo do metodo composto'
 	end
+end
 
-	### Executa classes ###
-	obj = ClassName.new 
-	obj.nome = "Emerson"
-	puts obj.nome 
-	obj.metodo
-	obj.metodo_composto
+### class 2 Herança ###
+class Heranca < ClassName
+end
 
-	obj_heranca = Heranca.new
-	obj_heranca.metodo_composto
+### Executa classes ###
+obj = ClassName.new 
+obj.nome = "Emerson"
+puts obj.nome 
+obj.metodo
+obj.metodo_composto
+
+obj_heranca = Heranca.new
+obj_heranca.metodo_composto
+```
 
 Saída Terminal
 
-	╰─➤ ruby classes.rb
-	Emerson
-	Corpo do metodo
-	Corpo do metodo composto
-	Corpo do metodo composto
+```
+╰─➤ ruby classes.rb
+Emerson
+Corpo do metodo
+Corpo do metodo composto
+Corpo do metodo composto
+```
 
-### AULA 12 - Orientação Objeto (Parte 2)
+## AULA 12 - Orientação Objeto (Parte 2)
 
 1 - Overrinding
 
-	É o recurso de linguagem que permite 	que uma subclasse forneça uma implementação especifica de um metodo que ja é fornecido por uma de sua superclasses. A implementacao na subclasse substitui a implementação na superclasse.
+```
+É o recurso de linguagem que permite 	que uma subclasse forneça uma implementação especifica de um metodo que ja é fornecido por uma de sua superclasses. A implementacao na subclasse substitui a implementação na superclasse.
+```
 
 Exemplo:
 
-	### arquivo.rb ###
-	class ClassMae
-		def correr
-			puts "A mae corre!!"
-		end
+```ruby
+class ClassMae
+	def correr
+		puts "A mae corre!!"
 	end
+end
 
-	class ClassFilha < ClassMae
-
-		# mesmo metodo da classMae, com isso o primeiro metodo é subscrito por o da ClassFilha
-
-		def correr
-			puts "A filha corre!!"
-		end
+class ClassFilha < ClassMae
+	# mesmo metodo da classMae, com isso o primeiro metodo é subscrito por o da ClassFilha
+	def correr
+		puts "A filha corre!!"
 	end
+end
 
-	obj = ClassFilha.new
-	obj.correr
+obj = ClassFilha.new
+obj.correr
+```
 
 2 - Super
 
-	O Super serve basicament para invocar o metodo correspondente da classe pai.
+```
+Super serve basicament para invocar o metodo correspondente da classe pai.
+```
 
 Exemplo:
 
-	class ClassMae
-		def correr
-			puts "A mae corre!!"
-		end
+```ruby
+class ClassMae
+	def correr
+		puts "A mae corre!!"
 	end
+end
 
-	class ClassFilha < ClassMae
-		def correr
-			# considerada os dois metodos, e não sobrescreve o metodo anterior
-			puts super
-			puts "Cansei!!!"
-		end
+class ClassFilha < ClassMae
+	def correr
+		# considerada os dois metodos, e não sobrescreve o metodo anterior
+		puts super
+		puts "Cansei!!!"
 	end
+end
 
-	obj = ClassFilha.new
-	obj.correr
+obj = ClassFilha.new
+obj.correr
+```
 
-### AULA 13 - Orientação Objeto (Parte 3)
+## AULA 13 - Orientação Objeto (Parte 3)
 
 1 - Modulos
 
-	São uma maneira de agrupar metodos, classes e constantes. Os modulos oferecem dois grandes beneficios.
-	Fornecem um NAMESPACE e evitam confrontos de nomes.
-	Também implementam a facilidade MIXIN os modulos definem um NAMESPACE, uma caixa de proteção na qual seus metodos e constantes podem ser reproduzidos sem ter que se preocupar em ser pisado por outros metodos e constantes.
+```
+São uma maneira de agrupar metodos, classes e constantes. Os modulos oferecem dois grandes beneficios.
+Fornecem um NAMESPACE e evitam confrontos de nomes.
+Também implementam a facilidade MIXIN os modulos definem um NAMESPACE, uma caixa de proteção na qual seus metodos e constantes podem ser reproduzidos sem ter que se preocupar em ser pisado por outros metodos e constantes.
+```
 
 Exemplo:
 
-	# agrupa classes
-	# agrupa constantes
-	# agrupa metodos
-	# ele é muito parecido com classe
-	# ele não pode ser instanciado
-	# nao pode ser herdado
-	
-	module ModuloNome
-		def metodo_padrao
-			puts "Eu sou um Modulo"
-		end
-	end
+```ruby
+# agrupa classes
+# agrupa constantes
+# agrupa metodos
+# ele é muito parecido com classe
+# ele não pode ser instanciado
+# nao pode ser herdado
 
-	class ClassName
-		include ModuloNome 
+module ModuloNome
+	def metodo_padrao
+		puts "Eu sou um Modulo"
 	end
+end
 
-	obj = ClassName.new
-	obj.metodo_padrao
+class ClassName
+	include ModuloNome 
+end
+
+obj = ClassName.new
+obj.metodo_padrao
+```
 
 2 - Polimorfismo
 
 Exemplo: 
 
-	class Cachorro
-		def latir
-			puts "Au Au Au!!"
-		end
-	end 
-
-	class CachorroGrande
-		def latir
-			puts "AU AU!!"
-		end
+```ruby
+class Cachorro
+	def latir
+		puts "Au Au Au!!"
 	end
+end 
 
-	class Pessoa
-		def agarra_cachorro(cachorro)
-			cachorro.latir
-		end
+class CachorroGrande
+	def latir
+		puts "AU AU!!"
 	end
+end
 
-	c1 = Cachorro.new
-	c2 = CachorroGrande.new
-	p = Pessoa.new
+class Pessoa
+	def agarra_cachorro(cachorro)
+		cachorro.latir
+	end
+end
 
-	p.agarra_cachorro(c1)
-	p.agarra_cachorro(c2)
+c1 = Cachorro.new
+c2 = CachorroGrande.new
+p = Pessoa.new
+
+p.agarra_cachorro(c1)
+p.agarra_cachorro(c2)
+```
 	
