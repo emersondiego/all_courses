@@ -301,3 +301,163 @@ Saida Terminal:
 ## AULA 18 - Contexto
 
   Permite você adicionar algum contexto a todos os cenários em um único recurso. Um contexto é como um cenário sem título, que contém uma série de etapas. A diferença ocorre quando ele é executado. O contexto será executado antes de cada um de seus cenários.
+
+  Contexto:
+
+    Dado que eu tenho 10 laranjas
+    Cenario: Comprar laranja
+    Quando eu compro 2 laranjas
+    Então eu verifico se o total de laranjas é 12
+
+Pratica
+
+1 - Criar arquivo em tests/features/specs chamados "contexto.feature"
+
+    #language: pt
+
+    Funcionalidade: Trabalhando com contexto
+
+    Contexto:
+    Dado que eu tenho 10 laranjas na bolsa
+
+    Cenario: Colocar quantidade de laranja
+    Quando eu coloco 2 laranjas na bolsa.
+    Então verifico o total de laranjas é 12.
+
+    Cenario: Retirar quantidades de laranjas laranja
+    Quando tiro 2 laranjas da bolsa
+    Então vejo quantas laranjas fiquei na bolsa
+
+2 - Rodar comando "cucumber" no terminal copiar metodos "steps" para o arquivo "contexto.rb" em step_definitions e criar logica.
+
+    Dado("que eu tenho {int} laranjas na bolsa") do |valor|
+      @laranjas = valor
+    end
+
+    Quando("eu coloco {int} laranjas na bolsa.") do |valor2|
+      @coloquei = valor2
+      @resultado = @laranjas + @coloquei
+    end
+
+    Então("verifico o total de laranjas é {int}.") do |total|
+      expect(@resultado).to eq total
+    end
+
+    Quando("tiro {int} laranjas da bolsa") do |valor3|
+      @retirei = valor3
+      @resultado = @laranjas - @retirei
+    end
+
+    Então("vejo quantas laranjas fiquei na bolsa") do
+      expect(@resultado).to eq 8
+    end
+
+Saida Terminal:
+
+    ╰─➤  cucumber features/specs/contexto.feature                                                                 1 ↵
+    # language: pt
+    Funcionalidade: Trabalhando com contexto
+      Contexto:                                # features/specs/contexto.feature:5
+      Dado que eu tenho 10 laranjas na bolsa # features/step_definitions/contexto.rb:1
+
+      Cenario: Colocar quantidade de laranja     # features/specs/contexto.feature:8
+      Quando eu coloco 2 laranjas na bolsa.    # features/step_definitions/contexto.rb:5
+      Então verifico o total de laranjas é 12. # features/step_definitions/contexto.rb:10
+
+      Cenario: Retirar quantidades de laranjas laranja # features/specs/contexto.feature:12
+      Quando tiro 2 laranjas da bolsa                # features/step_definitions/contexto.rb:14
+      Então vejo quantas laranjas fiquei na bolsa    # features/step_definitions/contexto.rb:19
+
+    2 scenarios (2 passed)
+    6 steps (6 passed)
+    0m0.106s
+
+## AULA 19 - Data Table (tabelas)
+
+  As tabelas são etapas de argumentos útes para a especificação de um grande conjunto de dados - normalmente como entrada para uma saida de dado ou como espera de um então.
+  Não confunda tabelas com ESQUEMA DE CENARIO - sintaricamente eles são idênticos, mas eles tem propósitos difenretes. Esquemas declaram diferentes valores múltiplos ao mesmo cenário, enquanto tabelas são usadas para esperar um conjunto dados.
+
+Existem dois tipos:
+
+  Exemplo 1
+
+    CENARIO: DATATABLE COM COLUNAS
+    DADO QUE AS SEGUINTES PESSOAS EXISTEM:
+    |NOME   |EMAIL            |FONE |
+    |ASLAK  |ASLAK@RMAIL.COM  |123  |
+    |JOE    |JOE@EMAIL.COM    |234  |
+    |BRYAN  |BRYAN@EMAIL.ORG  |456  |
+
+  Exemplo 2
+
+    Cenário: Dados de usuários
+    Dado que as seguintes pessoas existem:
+    |nome | Aslak            | Joe             |
+    |email| aslak@email.com  | joe@email.com  |
+    |fone | 123              | 1234.          |
+
+Pratica:
+
+1 - Criar arquivo em tests/features/specs chamados "datatable.feature"
+
+    #language: pt
+
+    Funcionalidade: Trabalhando com Datatable
+
+    Cenario: Cortar laranja
+    Dado que tenho umas laranjas
+    |laranja|10|
+    Quando corto duas laranjas 
+    Então verifico  quantas laranjas sobraram inteiras
+
+    Cenario: Chupar laranja
+    Dado que tenho umas laranjas
+    |laranja|
+    |10     |
+    Quando chupo 2 laranjas
+    Então verifico quantas laranjas sobraram
+
+2 - Rodar comando "cucumber" no terminal copiar metodos "steps" para o arquivo "datatable.rb" em step_definitions e criar logica.
+
+    # em linhas begin #
+
+    Dado("que eu tenho umas laranjas") do |table|
+      @laranja = table.rows_hash['laranja'].to_i
+    end
+
+    Quando("corto {int} laranjas") do |valor1|
+      @cortar = valor1
+      @total = @laranja - @cortar
+    end
+
+    Então("verifico  quantas laranjas sobraram inteiras") do
+      expect(@total).to eq 8
+    end
+
+    # em linhas end #
+
+    # em colunas begin #
+
+    Dado("eu que tenho umas laranjas") do |table|
+      table.hashes.each do |valor|
+        @laranjas = valor["laranja"].to_i
+      end
+    end
+
+    Quando("chupo {int} laranjas") do |valor2|
+      @chupei = valor2
+      @resultado = @laranjas - @chupei
+    end
+
+    Então("verifico quantas laranjas sobraram") do
+      expect(@resultado).to eq 8
+    end
+
+    # em colunas end #
+
+Dica:
+
+    Datatable com linha é usado o "rows_hash" pra pegar o header da coluna que a gente quer.
+    Datatable usando coluna pega o "hashes.each" pra pegar as colunas com os seus header
+
+## AULA 20 - Chamando outros steps
