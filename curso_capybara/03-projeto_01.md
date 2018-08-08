@@ -591,3 +591,258 @@ end
 ```
 As tags são uma ótima maneira de organizar seus recursos e cenários.
 ```
+
+Exemplo
+
+```ruby
+@important
+Funcionalidade: Verificar Faturamento
+Cenario: Descrição do produto ausente
+
+Cenario: Vários produtos
+```
+
+``
+Um cenário ou funcionalidade pode possuir varias tags
+``
+
+Exevutando as tags:
+
+```
+cucumber --tags @important
+cucumber --tags @important, ~@second - não rode os testes com tags second
+cucumber --t @important, @second, @third
+```
+
+Pratica:
+
+1 - Criar arquivo em tests/features/specs chamados "tags.feature"
+
+```ruby
+#language: pt
+
+@funcional
+Funcionalidade: Calculo de Subtração e Soma
+
+@tag_cenario
+Cenario: Fazer uma subtração
+Dado eu tenha 10 laranjas.
+Quando eu como 2 laranjas. 
+Então eu vejo quantas laranjas sobraram.
+
+Cenario: Fazer uma soma
+Dado eu tenha 10 laranjas.
+Quando eu compro 5 laranjas. 
+Então eu vejo quantas laranjas tenho.
+```
+
+Chamando apenas @tag_cenario
+
+Saida terminal:
+
+```
+╰─➤  cucumber --tags @tag_cenario
+# language: pt
+@funcional
+Funcionalidade: Calculo de Subtração e Soma
+
+  @tag_cenario
+  Cenario: Fazer uma subtração               # features/specs/tags.feature:7
+    Dado eu tenha 10 laranjas.               # features/step_definitions/cenario.rb:1
+      Tenho 10
+    Quando eu como 2 laranjas.               # features/step_definitions/cenario.rb:6
+      Comi 2
+    Então eu vejo quantas laranjas sobraram. # features/step_definitions/cenario.rb:12
+      Ainda tenho 8
+
+1 scenario (1 passed)
+3 steps (3 passed)
+0m0.030s
+```
+
+Chamando apenas @funcional
+
+```
+╰─➤  cucumber --tags @funcional 
+# language: pt
+@funcional
+Funcionalidade: Calculo de Subtração e Soma
+
+  @tag_cenario
+  Cenario: Fazer uma subtração               # features/specs/tags.feature:7
+    Dado eu tenha 10 laranjas.               # features/step_definitions/cenario.rb:1
+      Tenho 10
+    Quando eu como 2 laranjas.               # features/step_definitions/cenario.rb:6
+      Comi 2
+    Então eu vejo quantas laranjas sobraram. # features/step_definitions/cenario.rb:12
+      Ainda tenho 8
+
+  Cenario: Fazer uma soma                 # features/specs/tags.feature:12
+    Dado eu tenha 10 laranjas.            # features/step_definitions/cenario.rb:1
+      Tenho 10
+    Quando eu compro 5 laranjas.          # features/step_definitions/cenario.rb:17
+      Tenho 5
+    Então eu vejo quantas laranjas tenho. # features/step_definitions/cenario.rb:24
+      Comprei ao todo 15 laranjas
+
+2 scenarios (2 passed)
+6 steps (6 passed)
+0m0.033s
+```
+
+## AULA 22 - Hooks
+
+```
+Cucumber fornece um numero de hooks que nos permitem executar blocos em vários pontos no ciclo de teste do cucumber. Voc6e pode colocá-los em seu SUPPORT/ENV.RB arquivo ou qualquer outro arquivo no diretorio, por exemplo, em um arquivo chamado SUPPORT/HOOKS.RB. Não há associação entre onde o hook é definido e para qual cenário / Etapa ele é executado, mas você pode usar hooks marcadas se quiser um controle mais refinado.
+```
+After
+```
+After hooks serào executados após a ultima etapa de cada cenário, mesmo quando houver etapas com falha, indedinida, pendente ou iganorada. Eles serão executados na ordem inversa na qual estão registrados.
+```
+Before
+```
+Before hooks serão executados antes do primeiro passo de cada canário. Eles serão executados na mesma ordem em que estão registrados.
+```
+
+Diferença entre Contexto e Hooks
+
+``
+Contexto roda antes de cada cenario dentro da funcionalidade que ele esta
+Hooks roda antes ou depois de cada cenario do seu projeto inteiro.
+``
+
+Hooks com Tags
+````
+As vezes voce pode querer um certo gancho para executar apenas para determinados cenários. Isto pode ser inserido atraves da associação a Before, After, Around ou Afterstep Hooks com uma ou maus tags.
+````
+
+Pratica
+
+1 - Criar arquivo em tests/features/specs chamados "hooks_normal.feature"
+
+```ruby
+#language: pt
+
+Funcionalidade: Calculo Media
+
+-Eu como usuario
+-Quero fazer uma subtração e uma soma
+
+@comeco @final #sera utilizado no passo 5 em diante
+Cenario: Fazer uma media
+Quando realizo a media
+Então o resultado da media
+```
+
+2 - Rodar comando "cucumber" no terminal copiar metodos "steps" para o arquivo "hooks_normal.rb" em step_definitions e criar logica.
+
+```ruby
+Quando("realizo a media") do
+  @media  = @soma / 2
+end
+
+Então("o resultado da media") do
+  expect(@media).to eq 5
+end
+```
+
+3 - Criar arquivos "hooks.rb" em na pasta support
+
+```ruby
+before do
+  puts "Estou sendo executado antes de cada cenario"
+  @soma = 5 + 5
+end
+```
+
+Saida terminal
+
+```
+╰─➤  cucumber features/specs/hooks_normal.feature                                   2 ↵
+# language: pt
+Funcionalidade: Calculo Media
+-Eu como usuario
+-Quero fazer uma subtração e uma soma
+
+  Cenario: Fazer uma media     # features/specs/hooks_normal.feature:8
+      Estou sendo executado antes de cada cenario
+    Quando realizo a media     # features/step_definitions/hooks_normal.rb:1
+    Então o resultado da media # features/step_definitions/hooks_normal.rb:5
+
+1 scenario (1 passed)
+2 steps (2 passed)
+0m0.028s
+```
+
+Rodar depois de todos os cenários
+
+4 - Incluir no arquivo hooks.rb o trecho abaixo:
+
+```ruby
+After do
+  puts "Estou sendo executado depois de cada cenario"
+end
+```
+
+Saida terminal
+
+```
+╰─➤  cucumber features/specs/hooks_normal.feature
+# language: pt
+Funcionalidade: Calculo Media
+-Eu como usuario
+-Quero fazer uma subtração e uma soma
+
+  Cenario: Fazer uma media     # features/specs/hooks_normal.feature:8
+      Estou sendo executado antes de cada cenario
+    Quando realizo a media     # features/step_definitions/hooks_normal.rb:1
+    Então o resultado da media # features/step_definitions/hooks_normal.rb:5
+      Estou sendo executado depois de cada cenario
+
+1 scenario (1 passed)
+2 steps (2 passed)
+0m0.031s
+```
+
+Atenção
+
+``
+Esses dois casos citados acima são chamados de hooks globais
+``
+
+Rodando os hooks em terminada funcionalidade ou cenários
+
+5 - Incluir no arquivo hooks.rb o trecho abaixo:
+
+```ruby
+Before '@comeco' do
+  puts "Rodei apenas no cenario com tag comeco"
+end
+
+After '@final' do
+  puts "Rodei apenas no cenario com tag final"
+end
+```
+
+Saida Terminal:
+
+```ruby
+╰─➤  cucumber features/specs/hooks_normal.feature
+# language: pt
+Funcionalidade: Calculo Media
+-Eu como usuario
+-Quero fazer uma subtração e uma soma
+
+  @comeco @final
+  Cenario: Fazer uma media     # features/specs/hooks_normal.feature:9
+      Estou sendo executado antes de cada cenario
+      Rodei apenas no cenario com tag comeco
+    Quando realizo a media     # features/step_definitions/hooks_normal.rb:1
+    Então o resultado da media # features/step_definitions/hooks_normal.rb:5
+      Rodei apenas no cenario com tag final
+      Estou sendo executado depois de cada cenario
+
+1 scenario (1 passed)
+2 steps (2 passed)
+0m0.032s
+```
