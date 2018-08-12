@@ -75,7 +75,7 @@ Então o resltado é 4
 
 Saida terminal:
 
-```
+```ruby
 ╰─➤  cucumber
 # language: pt
 Funcionalidade: Fazer uma soma.
@@ -137,7 +137,7 @@ Executar comando 'cucumber'
 
 Saida terminal:
 
-```
+```ruby
 ╰─➤  cucumber
 # language: pt
 Funcionalidade: Fazer uma soma.
@@ -322,7 +322,7 @@ end
 
 Saida Terminal:
 
-```
+```ruby
 ╰─➤  cucumber features/specs/esquema_do_cenario.feature
 # language: pt
 Funcionalidade: Calculo de Multiplicação
@@ -405,7 +405,7 @@ end
 
 Saida Terminal:
 
-```
+```ruby
 ╰─➤  cucumber features/specs/contexto.feature                                                                 1 ↵
 # language: pt
 Funcionalidade: Trabalhando com contexto
@@ -640,7 +640,7 @@ Chamando apenas @tag_cenario
 
 Saida terminal:
 
-```
+```ruby
 ╰─➤  cucumber --tags @tag_cenario
 # language: pt
 @funcional
@@ -757,7 +757,7 @@ end
 
 Saida terminal
 
-```
+```ruby
 ╰─➤  cucumber features/specs/hooks_normal.feature                                   2 ↵
 # language: pt
 Funcionalidade: Calculo Media
@@ -786,7 +786,7 @@ end
 
 Saida terminal
 
-```
+```ruby
 ╰─➤  cucumber features/specs/hooks_normal.feature
 # language: pt
 Funcionalidade: Calculo Media
