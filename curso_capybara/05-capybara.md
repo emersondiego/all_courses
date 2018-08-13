@@ -212,4 +212,192 @@ Entao("verifico se encontrei os elementos") do
 end
 ````
 
-## AULA 29 - Clicando em links e botões.
+## AULA 29 - Clicando em links e botões
+
+- find(elemento).click
+- find(elemento).double_click
+- find(elemento).right_click
+- click_on: clica em links ou botoes
+- click_link_or_button: tem a mesma ação do click_on
+- click_button: clica no rimeiro botão encontrado pelo locator
+- click_link: clica no link pelo id, texto ou title
+
+Pratica:
+
+1 - Criar arquivo cucumber "links_e_botoes.feature"
+
+````ruby
+#language: pt
+
+@links_e_botoes
+Funcionalidade: Clicando em links e botoes
+
+Cenario: Clicar em botoes e links
+Quando clico em botoes
+````
+
+2 - Criar arquivo de steps "links_e_botoes.rb"
+
+````ruby
+Quando("clico em botoes") do
+  visit '/'
+  click_on('Começar Automação') # click_link_or_button
+  visit '/buscaelementos/botoes'
+  click_button(class: 'btn waves-light')
+  find('a[onclick="ativaedesativa2()"]').click
+  find('a[onclick="ativaedesativa2()"]').double_click
+  find('a[onclick="ativaedesativa3()"]').right_click
+  visit '/'
+  click_link('Github')
+end
+````
+
+## AULA 30 - Interagindo com formulários
+
+- find(elemento).set "campo a preencher"
+- find(elemento).send_keys("Campo a preencher")
+- fill_in => localize um campo de texto ou área de texto e preencha-o com o texto fornecido o campo pode ser encontrado através do seu nome, idenrtificação ou texto.
+
+Opções:
+
+- wait - Default: capybaradefault_max_wait_time - tempo máximo de espera pra o elemento correspondente ser exibido
+- :with - o valor a preecnher - obrigatório
+- :fill_options - opçõesespecificas do driver sobre como preencher campos
+- :currently_with - a propriedade de valor atual do campo para preencher 
+- :multiple - corresponder campos que podem ter vários valores
+- id - corresponder campos que correspondem ao atributo ID
+- :name - corresponder campos que correspondem ao atributo name
+- :placeholder - corresponder campos que correspondem ao atributo name
+- :class - correponder campos que corrpondam a(s) classe(s) forncecidas(s)
+
+Pratica:
+
+1 - Criar arquivo cucumber "interagindo_com_form.feature"
+
+````ruby
+#language: pt
+
+@interagindo_com_form
+Funcionalidade: Interagindo com formularios
+
+Cenario: Realizar cadastro
+Quando eu faco cadastro
+Entao verifico se fui cadastrado
+````
+
+2 - Criar arquivo de steps "interagindo_com_form.rb"
+
+````ruby
+Quando("eu faco cadastro") do
+  visit '/users/new'
+  fill_in(id: 'user_name', with: "Emerson")
+  find('#user_lastname').set("Pereira")
+  find('#user_email').send_keys('teste@teste.com.br')
+  fill_in(id: 'user_address', with: "Rua 1234")
+  find('#user_university').set("UNIB")
+  find('#user_profile').send_keys('QA')
+  fill_in(id: 'user_gender', with: "masculino")
+  find('#user_age').set("30")
+  find('input[value="Criar"]').click
+end
+
+Entao("verifico se fui cadastrado") do
+  texto = find('#notice')
+  expect(texto.text).to eql 'Usuário Criado com sucesso'
+end
+````
+
+## AULA 31 - Dropdown, select e autocomplete
+
+Dropdown e Select 
+
+find(elemento).click
+select => encontra uma caixa de seleção na página e seleciona uma opção específica dela
+unselect => encontre uma caixa de seleção na página e desmargue uma opção especifica dela
+select_option > seleciona uma opção especifica dela
+
+Pratica:
+
+1 - Criar arquivo cucumber "combobox_dropdown_autocomplete.feature"
+
+````ruby
+#language: pt
+
+@combobox_dropdown_autocomplete
+Funcionalidade: Interagindo com dropdown, select e autocomplete
+
+Cenario: Interagir com dropdown e select
+Quando interajo com dropdown e select
+
+Cenario: Preencher autocomplete
+Quando preencho o autocomplete
+````
+
+2 - Criar arquivo de steps "combobox_dropdown_autocomplete.rb"
+
+````ruby
+Quando("interajo com dropdown e select") do
+  visit '/buscaelementos/dropdowneselect'
+  # dropdown por click
+  find('.btn.dropdown-button').click
+  find('#dropdown3').click
+  # select - modo 1
+  select 'Chrome', from: 'dropdown'
+  # select - modo 2
+  find('option[value="2"]').select_option
+end
+
+Quando("preencho o autocomplete") do
+  visit '/widgets/autocomplete'
+  find('#autocomplete-input').set 'Rio de Janei'
+  find('ul', text: 'Rio de Janeiro').click
+end
+````
+
+## AULA 32 - Radio e Checkbox
+
+- find(elemento).click
+- check => Encontre uma caixa de seleção e margue-a como marcado
+- choose => encontre um botão de opção e margue-o como marcado
+- uncheck => encontre uma ciaxa de seleção e margue a opção desmarcada
+
+Opções:
+
+- ID (String)
+- name (string)
+- :class (string, array < string >)
+- :allow_label_click (boolean)
+- wait (false, numeric)
+
+Pratica
+
+1 - Criar arquivo cucumber "radiobox_checkbox.feature"
+
+````ruby
+#language: pt
+
+@radiobox_checkbox
+Funcionalidade: Marcando radiobox e checkbox
+
+Cenario: Marcar radiobox e checkbox
+Quando eu marco um checkbox e um radiobox
+````
+
+2 - Criar arquivo de steps "radiobox_checkbox.rb"
+
+````ruby
+Quando("eu marco um checkbox e um radiobox") do
+  visit '/buscaelementos/radioecheckbox'
+  #checkbox modo1
+  find('label[for="white"]').click
+  #checkbox modo2
+  check('purple', allow_label_click: true)
+  uncheck('purple', allow_label_click: true)
+  #radiobox
+  choose('red', allow_label_click: true)
+end
+````
+
+
+
+
