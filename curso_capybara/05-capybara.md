@@ -398,6 +398,124 @@ Quando("eu marco um checkbox e um radiobox") do
 end
 ````
 
+## AULA 33 - Verificando elementos visíveis na tela
+
+Esses são os principais:
+
+Assert
+
+- assert_none_of_selector => afirma que nenhum dos seletores fornecidos está presente na página ou nos descendentes do nó atual.
+- assert_matches_selector => aforma que o current_node corresponde a um determinado seletor.
+- asset_text => afirma que a pagina ou o nó atual possui o conteúdo de texto especificado, ignorando quaisquer tags html.
+
+Matches
+
+- matches_css? => verifica se o nó atual corresponde ao seletor de css especificado
+- matches_selector? => verifica se o nó atual corresponde ao seletor especificado
+- matches_xpath? => verifica se o nó atual corresponde a determinada expressão xpath
+
+Has
+
+- has-selector? => verifica se a pagina ou o nó atual tem um campo de seleção com o rótulo, o nome ou o id fornecido
+- has_table? => verifica se a pagina ou nó atual possui uma tabela com o id ou a legenda especificada
+- has_text? => verifica se a página ou o nó atual tem o conteúdo de texto especificado, ignorando todas as tags html
+- has_css? => verifica se um determinado seletor de css esta na pagina ou um descendente do nó atual
+
+Mais detalhes: https://www.rubydoc.info/github/jnicklas/capybara/Capybara/Node/Matchers
+
+Rspec Matchers
+
+- have_button => verifica se a pagina ou nó atual possui um botão com o texto, valor ou id fornecido
+- have_link => verifica se a pagina ou o nó atual tem um link com o texto ou o id fornecido
+- have_text => afirma que a pagina ou o nó atual possui o conteudo de texto especificado, ignorandp quaisquer tags html
+- have_title(title,**options) => verifica se um determinado titulo esta na pagina
+
+Mais detalhes: https://www.rubydoc.info/github/jnicklas/capybara/Capybara/RSpecMatchers
+
+Pratica
+
+1 - Criar arquivo cucumber "verificando_elementos_visiveis.feature"
+
+````ruby
+#language: pt
+
+@verificando_elementos_visiveis
+Funcionalidade: Verificando elementos visiveis na tela
+
+Cenario: Verificar elemento visivel com sucesso
+Quando clico no botao
+Entao verifico se o texto apareceu na tela com sucesso
+````
+
+2 - Criar arquivo de steps "verificando_elementos_visiveis.rb"
+
+````ruby
+Entao("verifico se o texto apareceu na tela com sucesso") do
+  # exemplo1
+  page.assert_text(text, 'Você Clicou no Botão!')
+  # exemplo2 
+  page.has_text?('Você Clicou no Botão!')
+  # exemplo3
+  have_text('Você Clicou no Botão!')
+end
+````
+
+## AULA 34 - Verificando elementos invisíveis na tela
+
+Esses são os principais:
+
+Assert_not
+
+- assert_notmatches_selector => afirma que o current_node não corresponde a um determinado seletor
+- assert_no_selector => afirma que um determinado seletor não esta na pagina ou descendente do nó atual
+- assert_no_text => afirma que a pagina ou o nó atual não tem o conteudo de texto especificado, ignorando quaisquer tags html
+
+Not_matches
+
+- not_matches_css => verifica se o nó atual não corresponde ao seletor de css fornecido
+- not_matches_selector? => verifica se o nó atual não corresponde ao dado seletor. O uso é identico as has_selector?
+- not_matches_xpath? => verifica se o nó atual não corresponde a expressao xpath fornecida
 
 
+Has_no
 
+- has_no_selector? => verifica se um determinado seletor não esta na pagina ou um descendente di nó atual
+- has_no_text? => verifica se a pagina ou o nó atual não possui o conteudo de texto especificado, ignorando qualquer tag html e normalizando o espaçõ em branco.
+- has_no_css? => verifica se um determinado seletor de css não esta na pagina ou um descendente do nó atual
+
+Pratica:
+
+1 - Criar arquivo cucumber "verificando_elementos_invisiveis.feature"
+
+````ruby
+#language: pt
+
+@verificando_elementos_visiveis
+Funcionalidade: Verificando elementos visiveis na tela
+
+Cenario: Verificar elemento visivel com sucesso
+Quando clico em um botao
+Entao verifico se o texto desapareceu na tela com sucesso
+````
+
+2 - Criar arquivo de steps "verificando_elementos_invisiveis.rb"
+
+````ruby
+Quando("clico em um botao") do
+  visit '/buscaelementos/botoes'
+  find('#teste').click
+end
+
+Entao("verifico se o texto desapareceu na tela com sucesso") do
+  page.assert_text(text, 'Você Clicou no Botão!')
+  page.has_text?('Você Clicou no Botão!')
+  have_text('Você Clicou no Botão!')
+
+  find('#teste').click
+
+  assert_no_text(text, 'Você Clicou no Botão!')
+  have_no_text?('Você Clicou no Botão!')
+end
+````
+
+## AULA 35 - Trabalhando Mouse Hover
