@@ -460,6 +460,12 @@ Entao("verifico se o texto apareceu na tela com sucesso") do
 end
 ````
 
+Atenção:
+
+````
+Um assert é uma afirmativa que vai gerar um erro quando a afirmativa não é encontrado, dessas três funções somente temos um assert que é page.assert_text , as outras funções não são asserts, elas vão retornar true/encontrado ou false/não encontrar sem causar erro ou teste falho.
+````
+
 ## AULA 34 - Verificando elementos invisíveis na tela
 
 Esses são os principais:
@@ -519,3 +525,368 @@ end
 ````
 
 ## AULA 35 - Trabalhando Mouse Hover
+
+- find(elemento).hover - move o mouse ate o elemento mapeado
+- find(elemento).hover.click - move o mouse até o elemento mapeado e depois clica
+
+Pratica:
+
+1 - Criar arquivo cucumber "mouse_hover.feature"
+
+````ruby
+#language: pt
+
+@mouse_hover
+Funcionalidade: Usando mouse hover
+
+Cenario: Selecionar mouse hover
+Quando seleciono o mouse hover 
+````
+
+2 - Criar arquivo de steps "mouse_hover.rb"
+
+````ruby
+Quando("seleciono o mouse hover") do
+  visit '/iteracoes/mousehover'
+  find('.activator').hover
+  find('.activator').hover.click
+end
+````
+
+## AULA 36 - Iframe e Modal
+
+- Muda o foco para o elemento mapeado
+
+````ruby
+within(elemento) do
+end
+````
+
+- Muda o foco para o Iframe
+
+````ruby
+within_frame(elemento) do
+end
+````
+
+Outros tipos:
+
+- Execute o bloco dados dentro de um determinado fielset dado o id ou legenda daquele fieldset
+
+````ruby
+within_fieldset(elemento) do
+end
+````
+
+- Execute o bloco dado dentro de uma tabela especifica, dado o id ou legenda dessa tabela
+
+````ruby
+within_table(elemento) do
+end
+````
+
+Pratica
+
+1 - Criar arquivo cucumber "iframe_modal.feature"
+
+````ruby
+#language: pt
+
+@iframe_modal
+Funcionalidade: Utilizando iframe e modal
+
+Cenario: Usando iframe
+Quando entro no iframe e preencho os campos
+
+Cenario: Usando modal
+Quando entro no modal e verifico o texto
+````
+
+2 - Criar arquivo de steps "iframe_modal.rb"
+
+````ruby
+Quando("entro no iframe e preencho os campos") do
+  visit '/mudancadefoco/iframe'
+  # mudando o foco para o iframe
+  within_frame('id_do_iframe') do
+    fill_in(id: 'first_name', with: 'Emerson')
+    fill_in(id: 'last_name', with: 'Pereira')
+  end
+end
+
+Quando("entro no modal e verifico o texto") do
+  visit '/mudancadefoco/modal'
+  find('a[href="#modal1"]').click
+  
+  # mudando o foco para o modal
+  within('#modal1') do
+    texto = find('h4')
+    expect(texto.text).to eq 'Modal Teste'
+    find('.modal-close').click
+  end
+end
+````
+
+## AULA 37 - Janela e Alert
+
+Janelas
+
+- within_windw - alterna a janela fornecida, executa o bloco, troca de volta
+- switch_to_window - obter a janela que foi aberta pelo bloco passado
+- current_window - retorna a janela atual
+- open_new_window - abre nova janela
+- windows - obter todas as janelas abertas
+
+Opções
+
+- resize_to 800, 600 - aumenta o tamanho da tela com o tamanho desejado
+- .close - fecha uma janela
+- .maximize - maximiza uma janela
+- .size - obtenha o tamanho da janela
+- .current? - se esta janela é a janela na qual os comandos estão sendo executados
+- .closed? - verifica se a janela esta fechada
+- .exists? - se a janela nao esta fechada
+
+Pratica
+
+1 - Criar arquivo cucumber "janelas_alertas.feature"
+
+````ruby
+#language: pt
+
+@janelas_alertas
+Funcionalidade: Interagindo com janelas e alerts
+
+Cenario: Usando janelas
+Quando eu entro na janela e verifico a mensagem
+
+Cenario: Usando alerts
+Quando eu entro no alerts e verifico faco a acao
+````
+
+2 - Criar arquivo de steps "janelas_alertas.rb"
+
+``
+Modo 1
+``
+
+````ruby
+Quando("eu entro na janela e verifico a mensagem") do
+  visit '/mudancadefoco/janela'
+
+  # recebe uma janela que foi aberta pelo link
+  janela = window_opened_by do
+    click_link 'Clique aqui'
+  end
+  # muda de foco para a janela
+  within_window janela do
+    # valida se estamos na url da nova aba
+    expect(current_url).to eq 'https://automacaocombatista.herokuapp.com/mudancadefoco/newwindow'
+    # valido texto da aba aberta
+    @mensagem = find('.red-text.text-darken-1.center')
+    expect(@mensagem.text).to eq 'Você Abriu uma nova janela!!' 
+    # fecha a aba aberta
+    janela.close
+  end
+end
+````
+
+``
+Modo 2
+``
+
+````ruby
+Quando("eu entro na janela e verifico a mensagem") do
+  visit '/mudancadefoco/janela'
+
+  click_link 'Clique aqui'
+  # muda para ultima aba
+  switch_to_window windows.last
+  # valida se acessou a aba
+  expect(current_url).to eq 'https://automacaocombatista.herokuapp.com/mudancadefoco/newwindow'
+  @mensagem = find('.red-text.text-darken-1.center')
+  expect(@mensagem.text).to eq 'Você Abriu uma nova janela!!' 
+  # fecha aba
+  windows.last.close
+end
+````
+
+Alert
+
+- accept_alert - execute o bloco, aceitando um alerta
+- accept_confirm - execute o bloco, aceitando uma confirmação
+- dismiss_confirm - execute o bloco, dispensando uma confirmação
+- accept_prompt - execute o bloco, aceitando um prompt, respondendo opcionalmente ao prompt
+- dismiss_prompt - execute o bloco, dispensando um prompt
+
+3 - Continue no segundo step arquivo de  "janelas_alertas.rb"
+
+````ruby
+Quando("eu entro no alerts e verifico faco a acao") do
+  visit '/mudancadefoco/alert'
+
+  # confirma opção
+  find('button[onclick="jsAlert()"]').click
+  page.accept_alert 
+
+  # cancela opção   
+  # caso queira aceitar usar "accept_confirm"
+  find('button[onclick="jsConfirm()"]').click
+  page.dismiss_confirm
+
+  # confirma ação e preenche campo
+  # caso queira cancela usar "dismiss_prompt"
+  find('button[onclick="jsPrompt()"]').click
+  page.accept_prompt(with: 'Emerson')
+end
+````
+
+## AULA 38 - Upload de Arquivo
+
+- attach_file(elemento, caminho do arquivo, opcoes) => encontre o campo de arquivo na pagina e anexe um arquivo dado seu caminho
+
+Opções:
+
+- wait - default: capybara.default_max_wait_time - tempo maximo para agurdar a exibicao do elemento corresponde
+- match - default: capybara.match - a estrategia de correspondencia a ser usada (:one, :first, :prefer_exact, :smart)
+- exact - default: capybara.exact - corresponde ao nome / conteúdo do rótulo ou aceita uma correspondência parcial
+- multiple - campo de correspondencia que permite a selecao de varios arquivos
+- id - corresponde a campos com o atributo id
+- name - campos com atributos name
+- :class - campos que correspondam a classes fornecidas
+- make_visible - um hash de estilhos css para alterar antes de tentar anexar o arquivo, se 'true' {opacity: 1, display: 'block', visibilidade: 'visible'} (pode não ser suportado por todos os drivers)
+
+Pratica
+
+1 - Criar arquivo cucumber "upload_de_arquivo.feature"
+
+````ruby
+#language: pt
+
+@upload_de_arquivo
+Funcionalidade: Upload de arquivo
+
+Cenario: Fazer upload de uma foto
+Quando eu faco um upload de arquivo
+````
+
+2 - Inclua uma imagem no projeto em seguida no terminal digite "pwd" pra gerar o caminho
+
+````
+╰─➤  pwd
+../workspace/cursos/all_courses/curso_capybara/05-capybara
+````
+
+3 - Criar arquivo de steps "upload_de_arquivo.rb"
+
+````ruby
+Quando("eu faco um upload de arquivo") do
+  visit '/outros/uploaddearquivos'
+  # modo 1 passando todo caminho
+  # attach_file('upload', '<incluir caminho da maquina>/features/download.png', make_visible: true)
+
+  # modo 2 passando todo caminho, concatenando o path com metodo Dir
+  @image = File.join(Dir.pwd, 'features/download.png')
+  attach_file('upload', @image, make_visible: true)
+end
+````
+
+## AULA 39 - Executando scripts
+
+Execute o script fornecido, não retornando um resultado, isso é util para scripts que retornam objetos complexos, como instruções JQuery
+
+Exemplo:
+
+- page.execute_script("window.scrollby(0,500);")
+
+- result = page.evaluete_script('4 + 4')
+
+Pratica:
+
+1 - Criar arquivo cucumber "script.feature"
+
+````ruby
+#language: pt
+
+@script
+Funcionalidade: Usando script
+
+Cenario: Usar script
+Quando eu uso script
+````
+
+2 - Criar arquivo de steps "script.rb"
+
+````ruby
+Quando("eu uso script") do
+  visit '/outros/scroll'
+  page.execute_script("window.scrollBy(0,1500)")
+
+  @result = page.evaluate_script('4 + 4');
+  puts "O resultado do JQuery é #{@result}"
+end
+````
+
+## AULA 40 - Usando teclado
+
+- element.send_keys(teclas)
+
+Pratica
+
+1 - Criar arquivo cucumber "usando_teclado.feature"
+
+````ruby
+#language: pt
+
+@usando_teclado
+Funcionalidade: Usando teclado
+
+Cenario: Usar teclado
+Quando realizo acoes com o teclado
+````
+
+2 - Criar arquivo de steps "usando_teclado.rb"
+
+````ruby
+Quando("realizo acoes com o teclado") do
+  visit '/users/new'
+  find('#user_name').send_keys(:page_down)
+  find('input[value="Criar"]').send_keys(:enter)
+end
+````
+
+## AULA 41 - Drag and Drop
+
+- elemento1 = page.find('#winston')
+- elemento2 = page.find('#dropzone')
+- elemento1.drag_to('@elemento2')
+
+Pratica
+
+1 - Criar arquivo cucumber "drag_and_drop.feature"
+
+````ruby
+#language: pt
+
+@drag_and_drop
+Funcionalidade: Usando Drag and Drop
+
+Cenario: Usar Drag and Drop
+
+Dado que eu estou na tela de drag_and_drop
+Quando movo o dragdrop
+````
+
+2 - Criar arquivo de steps "drag_and_drop.rb"
+
+````ruby
+Dado("que eu estou na tela de drag_and_drop") do
+  visit '/iteracoes/draganddrop'
+end
+
+Quando("movo o dragdrop") do
+  @primeiro_elemento = find('#winston')
+  @segundo_elemento = find('#dropzone')
+  @primeiro_elemento.drag_to(@segundo_elemento)
+end
+````
