@@ -360,7 +360,13 @@ Pratica:
 1 - Criar arquivo cucumber "iframe.feature"
 
 ````ruby
+#language: pt
 
+@iframe
+Funcionalidade: Usar Iframe
+
+Cenario: Preencher campo do iframe
+Quando preencho os campos
 ````
 
 2 - Criar o page object "iframe_page.rb" na pasta pages
@@ -392,3 +398,47 @@ end
 ````
 
 ## AULA 50 - Melhorando a forma de chamar os Page Object
+
+````
+Para não precisar ficar a todo momento instanciando a classe para fazer uso de seus metodos, podemos criar um arquivo helpers que irá nos ajudar com essa tarefa.
+````
+
+``
+Usando de exemplo arquivos mapeando_elementos
+``
+
+1 -Criar arquivo dentro da pasta support cahamdo 'page_helper.rb'
+
+
+````ruby
+Dir[File.join(File.dirname(__FILE__), '../pages/*_page.rb')].each { |file| require file}
+
+module PageObjects
+  def mapeando
+    @mapeando ||= MapeandoElementoPage.new
+  end
+end
+````
+
+````
+Concatena o join com o diretorio que tem o caminho xxx e adiciona na variavel file  
+Exemplo: require 'ajax_page.rb'
+Ou seja, pega todos os arquivos que termina _page.rb e dar ium require dentro do arquivo helper
+````
+
+2 - Incluir dentro de env.rb o modulo como global e incluir o arquivo helper como require_relative
+
+````ruby
+require_relative 'page_helper.rb'
+
+World(PageObjects)
+````
+
+3 - Alterar arquivo mapeando_elementos.rb, removendo a instancia que era feita dentro dele e chamando de forma mais limpa e clara a classe e metodos, passando pelo page_helper.rb.
+
+````ruby
+Quando("preencho o formulario") do
+  mapeando.load
+  mapeando.preencher
+end
+````
