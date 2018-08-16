@@ -286,5 +286,109 @@ end
 ## AULA 48 - Trabalhando com sessões
 
 ````
-O siteprism permite modelar seções de uma pagina que aparecem em varias paginas ou que aparecem varias vezes em um apagina separadamente das pagainas. Siteprism fornce a classe de section para essa tarefa.
+O siteprism permite modelar seções de uma pagina que aparecem em varias paginas ou que aparecem varias vezes em um apagina separadamente das pagainas. Siteprism fornce a classe de section para essa tarefa. Mapear uma coisa que se repete na mesma sessão.
 ````
+Exemplo:
+
+````
+# assim mapeia a sessão para icluir no page object
+
+class Sessao < SitePrism::Section
+  element :sessao_mapeada, 'elemento'
+end
+````
+
+Pratica:
+
+1 - Criar arquivo cucumber "sessoes.feature"
+
+````ruby
+#language: pt
+
+@sessao
+Funcionalidade: Usar Sessao
+
+Cenario: Clicar campo de sessao
+Quando clico no elemento da sessao
+````
+
+2 - Criar o page object "sessoes_page.rb" na pasta pages
+
+````ruby
+class Sessao < SitePrism::Section
+  element :youtube, 'a[href="https://www.youtube.com/channel/UCp554v_is_ZzjzSmAQyFfAA"]'
+  element :medium, 'a[href="https://medium.com/automa%C3%A7%C3%A3o-com-batista"]'
+end
+
+class Pagina < SitePrism::Page
+  set_url '/users/new'
+  section :navbar, Sessao, '.nav-wrapper'
+end
+````
+
+- section => nome da função do site_prism
+- :navbar => nome que ira rececer para chamar a section
+- Sessao =>  nome da classe de onde vem a sessao
+- '.nav-wrapper' => mapeamento de elemento
+
+3 - Criar arquivo "sessoes.rb" na pasta steps
+
+````ruby
+Quando("clico no elemento da sessao") do
+  @pagina = Pagina.new
+  @pagina.load
+  @pagina.navbar.medium.click
+end
+````
+
+## AULA 49 - Trabalhando com Iframes
+
+````
+Parecido com section
+
+class MyIframe < SitePrism::Page
+  element :some_text_field, 'input.username'
+end
+
+class PageContainingIframe < SitePrism::Page
+  element :my_frame, MyIframe, '#my_iframe_id'
+end
+````
+
+Pratica:
+
+1 - Criar arquivo cucumber "iframe.feature"
+
+````ruby
+
+````
+
+2 - Criar o page object "iframe_page.rb" na pasta pages
+
+````ruby
+class PaginaIframe < SitePrism::Page
+  element :nome, '#first_name'
+  element :sobrenome, '#last_name'
+end
+
+class PaginaPadrao < SitePrism::Page
+  set_url '/mudancadefoco/iframe'
+  iframe :preencher_campos, PaginaIframe, '#id_do_iframe'
+end
+````
+
+3 - Criar arquivo "iframe.rb" na pasta steps
+
+````ruby
+Quando("preencho os campos") do
+  @pagina_iframe = PaginaPadrao.new
+  @pagina_iframe.load
+
+  @pagina_iframe.preencher_campos do |iframe|
+    iframe.nome.set 'Emerson'
+    iframe.sobrenome.set 'Pereira'
+  end
+end
+````
+
+## AULA 50 - Melhorando a forma de chamar os Page Object
