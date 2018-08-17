@@ -19,7 +19,8 @@ gem 'rspec'
 gem 'selenium-webdriver'
 gem 'site_prism', '2.13'
 ```
-3 - Adicionar no requires no arquvo env.rb e configurando o Capybara
+
+3 - Adicionar os requires no arquivo env.rb e configurar o Capybara
 
 ```ruby
 require 'capybara/cucumber'
@@ -37,7 +38,7 @@ end
 
 5 - Na pasta raiz criar a pasta reports
 
-6 - Criar arquivo hooks.rb dentro de support para configurar o screenshot
+6 - Criar arquivo hooks.rb dentro de support para configurar o screenshot ao final de cada cenário
 
 ```ruby
 After do |scenario|
@@ -63,14 +64,24 @@ module Helper
 end
 ````
 
-8 - No env.rb dar require dos helpers criados e inclui-lo como global
+8 - No env.rb adicionar require dos helper criado e inclui-lo como global
 
 ````ruby
+require 'capybara/cucumber'
+require 'selenium-webdriver'
+require 'site_prism'
 require_relative 'helper.rb'
+
 World(Helper)
+
+Capybara.configure do |config|
+  config.default_driver = :selenium_chrome
+  config.app_host = 'https://automacaocombatista.herokuapp.com'
+  config.default_max_wait_time = 10
+end
 ````
 
-10 - Vamos configurar o cucumber, criar arquivo cucumber.yml na pasta raiz
+10 - Configurar o cucumber, criar arquivo cucumber.yml na pasta raiz
 
 ````yml
 ---
@@ -81,32 +92,53 @@ pretty: --format pretty
 homolog: AMBIENTE=homolog
 ````
 
-11 - Dentro de support criar pasta ambientes e criar arquivo homolog.yml
+11 - Dentro de support criar pasta ambientes e criar arquivo homolog.yml passando a url do ambiente
 
 ````yml
 url_padrao: 'https://automacaocombatista.herokuapp.com'
 ````
 
-12 - Vamos configurar o ambiente dentro do arquivo env.rb
+12 - Configurar o ambiente dentro do arquivo env.rb para que ele possa buscar a url dentro da pasta ambientes
 
 ````ruby
+require 'capybara/cucumber'
+require 'selenium-webdriver'
+require 'site_prism'
+require_relative 'helper.rb'
+
 AMBIENTE = ENV['AMBIENTE']
 CONFIG = YAML.load_file(File.dirname(__FILE__) + "/ambientes/#{AMBIENTE}.yml")
-````
 
-13 - No arquivo env.rb aterar a url padrão do capybara para chamar pela constante config criada
+World(Helper)
 
-````ruby
 Capybara.configure do |config|
   config.default_driver = :selenium_chrome
-
-  config.app_host = CONFIG['url_padrao']
-
+  config.app_host = 'https://automacaocombatista.herokuapp.com'
   config.default_max_wait_time = 10
 end
 ````
 
-14 - Criar nosso cenarios criar_usuario.feature dentro de specs.
+13 - Ainda no env.rb alterar a url padrão do capybara para chamar pela constante CONFIG criada
+
+````ruby
+require 'capybara/cucumber'
+require 'selenium-webdriver'
+require 'site_prism'
+require_relative 'helper.rb'
+
+AMBIENTE = ENV['AMBIENTE']
+CONFIG = YAML.load_file(File.dirname(__FILE__) + "/ambientes/#{AMBIENTE}.yml")
+
+World(Helper)
+
+Capybara.configure do |config|
+  config.default_driver = :selenium_chrome
+  config.app_host = CONFIG['url_padrao']
+  config.default_max_wait_time = 10
+end
+````
+
+14 - Criar cenario criar_usuario.feature dentro de specs
 
 ````ruby
 #language: pt
@@ -122,7 +154,7 @@ Quando eu cadastro meu usuario
 Entao verifico se o usuario foi cadastrado
 ````
 
-15 - Criar nosso arquivo criar_usuario.rb em step-definitions com os steps gerados no terminal
+15 - Criar arquivo criar_usuario.rb em step-definitions com os steps gerados no terminal
 
 ````ruby
 Quando("eu cadastro meu usuario") do
@@ -176,12 +208,26 @@ module Pages
 end
 ````
 
-18 - Incluir o modulo Pages criado como global dentro de env.rb e dar um require nele
+18 - Incluir o modulo Pages criado como global dentro de env.rb e dar um require do arquivo
 
 ````ruby
+require 'capybara/cucumber'
+require 'selenium-webdriver'
+require 'site_prism'
+require_relative 'helper.rb'
 require_relative 'page_helper.rb'
 
+AMBIENTE = ENV['AMBIENTE']
+CONFIG = YAML.load_file(File.dirname(__FILE__) + "/ambientes/#{AMBIENTE}.yml")
+
+World(Helper)
 World(Pages)
+
+Capybara.configure do |config|
+  config.default_driver = :selenium_chrome
+  config.app_host = CONFIG['url_padrao']
+  config.default_max_wait_time = 10
+end
 ````
 
 18 - Acrescentar em nosso cucumber.yml relatório
@@ -196,7 +242,7 @@ homolog: AMBIENTE=homolog
 html: --format html --out=reports/relatorio.html
 ````
 
-19 - arquivo criar_usuario preenchido com os dados do PO
+19 - Arquivo criar_usuario.rb preenchido com os dados do PO
 
 ````ruby
 Quando("eu cadastro meu usuario") do
@@ -237,7 +283,7 @@ Funcionalidade: Criar Usuario
 0m12.122s
 ````
 
-### Aprendemos no curso:
+### Aprendemos no curso
 
 - Configuração de ambientes (windows, linux e mac)
 

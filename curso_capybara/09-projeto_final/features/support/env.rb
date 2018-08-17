@@ -7,7 +7,6 @@ require_relative 'page_helper.rb'
 AMBIENTE = ENV['AMBIENTE']
 CONFIG = YAML.load_file(File.dirname(__FILE__) + "/ambientes/#{AMBIENTE}.yml")
 
-
 World(Helper)
 World(Pages)
 
