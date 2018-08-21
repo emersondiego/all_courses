@@ -77,3 +77,5 @@ Client
   Kitematic
 
   [INSTALAÇÃO - Visão Geral](INSTALL.md)
+
+  [USO BÁSICO DOCKER](BASIC-DOCKER.md)
