@@ -79,3 +79,5 @@ Client
   [INSTALAÇÃO - Visão Geral](INSTALL.md)
 
   [USO BÁSICO DOCKER](BASIC-DOCKER.md)
+
+  [CRIANDO NO DOCKER](CREATE-DOCKER.md)
