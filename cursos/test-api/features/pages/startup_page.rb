@@ -6,7 +6,6 @@ class Startup
   def initialize(body)
     @options = {:body => body}
     @options2 = {}
-
   end
 
   def post_startup

@@ -2,12 +2,12 @@ Before '@startup' do
   @nome = Faker::Company.name 
   @cidade = Faker::Address.city
 
-  body = {
+  @body = {
     "nome": @nome,
     "cidade": @cidade
   }
 
-  @body = JSON.generate(body)
+  # @body = JSON.generate(body)
 
   @startup = Startup.new(@body)
 end
