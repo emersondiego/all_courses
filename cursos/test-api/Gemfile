@@ -1,0 +1,5 @@
+gem 'faker'
+gem 'httparty'
+gem 'cucumber'
+gem 'rspec'
+
