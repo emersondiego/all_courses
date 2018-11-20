@@ -1,0 +1,18 @@
+==================================
+SEJA BEM-VINDO AO CURSOEMVIDEO.COM
+Cursos GRATIS feitos com QUALIDADE
+==================================
+Essa aula faz parte de um pacote do Curso de JAVA, criado pelo Prof. Gustavo Guanabara. 
+
+A chave para o bom aprendizado e sempre a PRÁTICA, então pratique MUITO e não deixe de acompanhar todas as aulas disponíveis no site abaixo:
+------------------------------------------------
+www.cursoemvideo.com/course/curso-java-iniciante/
+------------------------------------------------
+Todas as aulas são gratuitas, mas possuem o direito autoral reservado  ao autor, Gustavo Guanabara.
+
+Coloque a pasta descompactada no diretório referente aos seus projetos Java no NetBeans. Normalmente essa pasta é Meus Documentos\NetBeans Projects .
+
+Crie cópias dessa pasta para usá-la em outros exercícios que serão criados durante todo o curso.
+
+
+BONS ESTUDOS!
