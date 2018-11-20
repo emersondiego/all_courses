@@ -1,8 +1,640 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2f270de-d1dd-416f-8164-103f0d675859" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+    <list default="true" id="b156ea5e-f60a-4eb6-a996-e96488070d28" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curso_java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/curso_java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/build/classes/imagens/pequenas-alegrias-diarias.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_nara/RelogioSwing/src/imagens/pequenas-alegrias-diarias.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/build/classes/olamundojx/FXMLDocument.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/OlaMundoJX.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/OlaMundoJX.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/OlaMundoJX.jnlp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/web-files/dtjava.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/web-files/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/web-files/get_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/web-files/get_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/web-files/javafx-chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/web-files/javafx-loading-100x100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/web-files/javafx-loading-25x25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/web-files/upgrade_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/dist/web-files/upgrade_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/nbproject/configs/Run_as_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/nbproject/configs/Run_in_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/nbproject/jfx-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/nbproject/private/configs/Run_as_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/nbproject/private/configs/Run_in_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/OlaMundoJX/src/olamundojx/FXMLDocument.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/curso_video/ResolucaoTela.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/cursoemvideo/TelaRelogio$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/cursoemvideo/TelaRelogio$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/cursoemvideo/TelaRelogio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/olamundojx/FXMLDocumentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/curso_java/olamundojx/OlaMundoJX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/BalancoTrimestral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/EntrarBalada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Exercicio1b.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Exercicio2b.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Exercicio3b.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Fatorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Four.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Imas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/MaiorNumero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/MultiplosTres.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/NumeroDecrescente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/ParImpar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/QuebraCabeca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/build/classes/cursoemvideo/TelaRelogio$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/build/classes/cursoemvideo/TelaRelogio$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/build/classes/cursoemvideo/TelaRelogio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/build/classes/cursoemvideo/TelaRelogio.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/build/classes/imagens/pequenas-alegrias-diarias.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/src/cursoemvideo/TelaRelogio.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/src/cursoemvideo/TelaRelogio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/RelogioSwing/src/imagens/pequenas-alegrias-diarias.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Sparta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/TesteIdade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Uale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Urionlinejudge1001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Urionlinejudge1002.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Urionlinejudge1009.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/Urionlinejudge1013.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_nara/urionlinejudge1010.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/Aula5OlaMundoSwing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/build/classes/cursoemvideo/olamundo/OlaMundoJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/build/classes/cursoemvideo/olamundo/OlaMundoJava$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/build/classes/cursoemvideo/olamundo/OlaMundoJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/build/classes/cursoemvideo/olamundo/OlaMundoJava.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/src/cursoemvideo/olamundo/OlaMundoJava.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/Aula5OlaMundoSwing/src/cursoemvideo/olamundo/OlaMundoJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/HoraDoSistema.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/build/classes/horadosistema/HoraDoSistema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/HoraDoSistema/src/horadosistema/HoraDoSistema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/IdiomaSistema.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/build/classes/idiomasistema/IdiomaSistema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/IdiomaSistema/src/idiomasistema/IdiomaSistema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/build/classes/olamundojx/FXMLDocument.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/build/classes/olamundojx/FXMLDocumentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/build/classes/olamundojx/OlaMundoJX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/OlaMundoJX.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/OlaMundoJX.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/OlaMundoJX.jnlp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/web-files/dtjava.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/web-files/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/web-files/get_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/web-files/get_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/web-files/javafx-chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/web-files/javafx-loading-100x100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/web-files/javafx-loading-25x25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/web-files/upgrade_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/dist/web-files/upgrade_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/nbproject/configs/Run_as_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/nbproject/configs/Run_in_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/nbproject/jfx-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/nbproject/private/configs/Run_as_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/nbproject/private/configs/Run_in_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/src/olamundojx/FXMLDocument.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/src/olamundojx/FXMLDocumentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoJX/src/olamundojx/OlaMundoJX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoSwing/OlaMundoSwing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoSwing/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/OlaMundoSwing/src/olamundoswing/OlaMundoSwing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/PrimeiroPrograma.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/build/classes/primeiroprograma/PrimeiroPrograma.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/PrimeiroPrograma/src/primeiroprograma/PrimeiroPrograma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/ResolucaoTela1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/build/classes/resolucaotela/ResolucaoTela.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/ResolucaoTela/src/resolucaotela/ResolucaoTela.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/__MACOSX/aula04/.__leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/PrimeiroPrograma1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/build/classes/primeiroprograma/PrimeiroPrograma.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/PrimeiroPrograma/src/primeiroprograma/PrimeiroPrograma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/04-curso-java-aula/aula04/_leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/__MACOSX/aula05/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/__MACOSX/aula05/.__leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/OlaMundoJavaFX.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/build/classes/olamundojavafx/FXMLDocument.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/build/classes/olamundojavafx/FXMLDocumentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/build/classes/olamundojavafx/OlaMundoJavaFX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/OlaMundoJavaFX.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/OlaMundoJavaFX.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/OlaMundoJavaFX.jnlp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/web-files/dtjava.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/web-files/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/web-files/get_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/web-files/get_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/web-files/javafx-chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/web-files/javafx-loading-100x100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/web-files/javafx-loading-25x25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/web-files/upgrade_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/dist/web-files/upgrade_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/nbproject/configs/Executar_como_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/nbproject/configs/Executar_no_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/nbproject/jfx-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/nbproject/private/configs/Executar_como_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/nbproject/private/configs/Executar_no_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/src/olamundojavafx/FXMLDocument.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/src/olamundojavafx/FXMLDocumentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoJavaFX/src/olamundojavafx/OlaMundoJavaFX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/OlaMundoSwing1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/build/classes/cursoemvideo/olamundo/OlaMundoJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/build/classes/cursoemvideo/olamundo/OlaMundoJava$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/build/classes/cursoemvideo/olamundo/OlaMundoJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/dist/OlaMundoSwing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/src/cursoemvideo/olamundo/OlaMundoJava.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/OlaMundoSwing/src/cursoemvideo/olamundo/OlaMundoJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/05-curso-java-aula/aula05/_leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/__MACOSX/aula06/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/__MACOSX/aula06/.__leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/SomaSwing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/build/classes/com/cursoemvideo/soma/TelaSoma$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/build/classes/com/cursoemvideo/soma/TelaSoma$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/build/classes/com/cursoemvideo/soma/TelaSoma.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/build/classes/com/cursoemvideo/soma/TelaSoma.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/src/com/cursoemvideo/soma/TelaSoma.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/SomaSwing/src/com/cursoemvideo/soma/TelaSoma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/TesteTipos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/build/classes/testetipos/TesteTipos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TesteTipos/src/testetipos/TesteTipos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/TiposPrimitivos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/build/classes/tiposprimitivos/TiposPrimitivos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/TiposPrimitivos/src/tiposprimitivos/TiposPrimitivos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/06-curso-java-aula/aula06/_leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/__MACOSX/aula07/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/__MACOSX/aula07/.__leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/OperadoresAritmeticos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/build/classes/operadoresaritmeticos/OperadoresAritmeticos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresAritmeticos/src/operadoresaritmeticos/OperadoresAritmeticos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/OperadoresSwing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/build/classes/com/cursoemvideo/operadores/TelaValores$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/build/classes/com/cursoemvideo/operadores/TelaValores$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/build/classes/com/cursoemvideo/operadores/TelaValores.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/build/classes/com/cursoemvideo/operadores/TelaValores.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/src/com/cursoemvideo/operadores/TelaValores.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/OperadoresSwing/src/com/cursoemvideo/operadores/TelaValores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/07-curso-java-aula/aula07/_leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/__MACOSX/aula08/.__leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/ComparacaoString.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/build/classes/comparacaostring/ComparacaoString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/ComparacaoString/src/comparacaostring/ComparacaoString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/OperadorTernario.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/build/classes/operadorternario/OperadorTernario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadorTernario/src/operadorternario/OperadorTernario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/OperadoresLogicos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/build/classes/operadoreslogicos/OperadoresLogicos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/OperadoresLogicos/src/operadoreslogicos/OperadoresLogicos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/VerificadorIdadeSwing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/build/classes/pacoteidade/TelaIdade$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/build/classes/pacoteidade/TelaIdade$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/build/classes/pacoteidade/TelaIdade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/build/classes/pacoteidade/TelaIdade.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/src/pacoteidade/TelaIdade.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/VerificadorIdadeSwing/src/pacoteidade/TelaIdade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/aulas/08-curso-java-aula/aula08/_leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/__MACOSX/aula04exercicios/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/__MACOSX/aula04exercicios/.__leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/HoraAtual.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/build/classes/horaatual/HoraAtual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtual/src/horaatual/HoraAtual.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/HoraAtualFormatada.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/build/classes/horaatualformatada/HoraAtualFormatada.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/HoraAtualFormatada/src/horaatualformatada/HoraAtualFormatada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/IdiomaSistema1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/build/classes/idiomasistema/IdiomaSistema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/IdiomaSistema/src/idiomasistema/IdiomaSistema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/ResolucaoTela.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/build/classes/resolucaotela/ResolucaoTela.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/ResolucaoTela/src/resolucaotela/ResolucaoTela.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/04-curso-java-exercicios/aula04exercicios/_leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/__MACOSX/aula05exercicios/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/__MACOSX/aula05exercicios/.__leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/__MACOSX/aula05exercicios/HoraAtualSwing/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/__MACOSX/aula05exercicios/HoraAtualSwing/dist/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/__MACOSX/aula05exercicios/IdiomaSistemaSwing/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/__MACOSX/aula05exercicios/IdiomaSistemaSwing/dist/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/__MACOSX/aula05exercicios/ResolucaoTelaSwing/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/__MACOSX/aula05exercicios/ResolucaoTelaSwing/dist/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/HoraAtualSwing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/build/classes/cursoemvideo/com/TelaHoraAtual$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/build/classes/cursoemvideo/com/TelaHoraAtual$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/build/classes/cursoemvideo/com/TelaHoraAtual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/build/classes/cursoemvideo/imagens/calendario.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/dist/HoraAtualSwing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/src/cursoemvideo/com/TelaHoraAtual.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/src/cursoemvideo/com/TelaHoraAtual.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/HoraAtualSwing/src/cursoemvideo/imagens/calendario.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/IdiomaSistemaSwing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/build/classes/cursoemvideo/com/TelaIdioma$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/build/classes/cursoemvideo/com/TelaIdioma$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/build/classes/cursoemvideo/com/TelaIdioma.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/build/classes/cursoemvideo/imagens/idioma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/dist/IdiomaSistemaSwing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/src/cursoemvideo/com/TelaIdioma.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/src/cursoemvideo/com/TelaIdioma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/IdiomaSistemaSwing/src/cursoemvideo/imagens/idioma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/ResolucaoTelaSwing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/build/classes/cursoemvideo/com/TelaResolucao$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/build/classes/cursoemvideo/com/TelaResolucao$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/build/classes/cursoemvideo/com/TelaResolucao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/build/classes/cursoemvideo/imagens/tela.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/dist/ResolucaoTelaSwing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/src/cursoemvideo/com/TelaResolucao.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/src/cursoemvideo/com/TelaResolucao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/ResolucaoTelaSwing/src/cursoemvideo/imagens/tela.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/05-curso-java-exercicios/aula05exercicios/_leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/__MACOSX/aula06exercicios/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/__MACOSX/aula06exercicios/.__leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/_leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/build/classes/classes/telaIdade$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/build/classes/classes/telaIdade$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/build/classes/classes/telaIdade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/build/classes/classes/telaIdade.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/build/classes/imagens/calculadora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/build/classes/imagens/usuario-icone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/calculadoraIdade.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/src/classes/telaIdade.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/src/classes/telaIdade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/src/imagens/calculadora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/calculadoraIdade/src/imagens/usuario-icone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/build/classes/classes/telaIdade$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/build/classes/classes/telaIdade$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/build/classes/classes/telaIdade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/build/classes/classes/telaIdade.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/build/classes/imagens/calculadora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/build/classes/imagens/usuario-icone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/dist/projetoIdade.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/projetoIdade.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/src/classes/telaIdade.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/src/classes/telaIdade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/src/imagens/calculadora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/06-curso-java-exercicios/aula06exercicios/projetoIdade/src/imagens/usuario-icone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/__MACOSX/aula07exercicios/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/__MACOSX/aula07exercicios/.__leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/__MACOSX/aula07exercicios/SuperCalculadora/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/SuperCalculadora.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/build/classes/classes/telaCalc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/build/classes/classes/telaCalc$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/build/classes/classes/telaCalc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/build/classes/imagens/calc-botao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/build/classes/imagens/calculadora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/dist/SuperCalculadora.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/src/classes/telaCalc.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/src/classes/telaCalc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/src/imagens/calc-botao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/SuperCalculadora/src/imagens/calculadora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/07-curso-java-exercicios/aula07exercicios/_leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/__MACOSX/aula08exercicios/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/__MACOSX/aula08exercicios/.__leia-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/__MACOSX/aula08exercicios/LeitorPensamento/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/LeitorPensamento.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/build/classes/classes/telaSorteio$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/build/classes/classes/telaSorteio$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/build/classes/classes/telaSorteio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/build/classes/imagens/balao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/build/classes/imagens/genio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/dist/LeitorPensamento.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/src/classes/telaSorteio.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/src/classes/telaSorteio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/src/imagens/balao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/LeitorPensamento/src/imagens/genio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curso_video/exercicios/08-curso-java-exercicios/aula08exercicios/_leia-me.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,111 +644,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-349366450">
+    <session id="912347163">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="fxml" value="1" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="68" />
+          <entry key="java" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="67" />
-          <entry key="Scratch" value="1" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="4414" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="4414" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-115064926">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="JAVA" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaFXApplication" />
-        <option value="Class" />
-      </list>
-    </option>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$/../../dev/jaiminho" value="PREVIEW" />
-      </map>
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/TesteIdade.java" />
-        <option value="$PROJECT_DIR$/src/BalancoTrimestral.java" />
-        <option value="$PROJECT_DIR$/src/EntrarBalada.java" />
-        <option value="$PROJECT_DIR$/src/ParImpar.java" />
-        <option value="$PROJECT_DIR$/src/uale.java" />
-        <option value="$PROJECT_DIR$/src/Uale.java" />
-        <option value="$PROJECT_DIR$/src/four.java" />
-        <option value="$PROJECT_DIR$/src/Four.java" />
-        <option value="$PROJECT_DIR$/src/Sparta.java" />
-        <option value="$PROJECT_DIR$/src/MaiorNumero.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/MaiorNumero.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/NumeroDecrescente.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/MultiplosTres.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/ParImpar.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/Fatorial.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/imas.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/Imas.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/Exercicio1b.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/Exercicio2b.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/Exercicio3b.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/QuebraCabeca.java" />
-        <option value="$PROJECT_DIR$/src/curso_video/ResolucaoTela.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/Urionlinejudge1001.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/Urionlinejudge1002.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/Urionlinejudge1009.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/Urionlinejudge1013.java" />
-        <option value="$PROJECT_DIR$/src/curso_nara/urionlinejudge1010.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="777" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1452" />
+    <option name="y" value="64" />
+    <option name="width" value="1211" />
+    <option name="height" value="518" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -124,7 +682,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,31 +689,16 @@
               <item name="curso_java" type="b2602c69:ProjectViewProjectNode" />
               <item name="curso_java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="curso_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="curso_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="curso_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="curso_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="curso_video" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542751465794" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542753347752" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -170,46 +712,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OlaMundoJX">
-    <configuration name="OlaMundoJX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="olamundojx.OlaMundoJX" />
-      <module name="curso_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="olamundojx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Urionlinejudge1002" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="curso_nara.Urionlinejudge1002" />
-      <module name="curso_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="curso_nara.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Urionlinejudge1009" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="curso_nara.Urionlinejudge1009" />
-      <module name="curso_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="curso_nara.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Urionlinejudge1013" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="curso_nara.Urionlinejudge1013" />
       <module name="curso_java" />
@@ -223,33 +726,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="urionlinejudge1010" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="curso_nara.urionlinejudge1010" />
-      <module name="curso_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="curso_nara.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Urionlinejudge1002" />
-      <item itemvalue="Application.Urionlinejudge1009" />
-      <item itemvalue="Application.Urionlinejudge1013" />
-      <item itemvalue="Application.OlaMundoJX" />
-      <item itemvalue="Application.urionlinejudge1010" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OlaMundoJX" />
-        <item itemvalue="Application.urionlinejudge1010" />
         <item itemvalue="Application.Urionlinejudge1013" />
-        <item itemvalue="Application.Urionlinejudge1009" />
-        <item itemvalue="Application.Urionlinejudge1002" />
       </list>
     </recent_temporary>
   </component>
@@ -258,275 +737,53 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f2f270de-d1dd-416f-8164-103f0d675859" name="Default Changelist" comment="" />
-      <created>1539726287789</created>
+      <changelist id="b156ea5e-f60a-4eb6-a996-e96488070d28" name="Default Changelist" comment="" />
+      <created>1542753295962</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1539726287789</updated>
+      <updated>1542753295962</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <frame x="1366" y="-2" width="1366" height="770" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49673203" visible="true" weight="0.26332796" />
-      <window_info id="Structure" order="1" sideWeight="0.503268" side_tool="true" weight="0.2536349" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2219697" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3296875" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29489052" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32846716" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16453674" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.29635036" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.329927" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.23419689" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/curso_java.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/BalancoTrimestral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Sparta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/MultiplosTres.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/NumeroDecrescente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/MaiorNumero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Imas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/EntrarBalada.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Exercicio3b.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_video/ResolucaoTela.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/QuebraCabeca.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Exercicio2b.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/TesteIdade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Exercicio1b.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="1496" column="16" lean-forward="true" selection-start-line="1496" selection-start-column="16" selection-end-line="1496" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Urionlinejudge1009.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Urionlinejudge1001.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/curso_nara/Urionlinejudge1013.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
-          <caret line="2420" column="20" selection-start-line="2420" selection-start-column="20" selection-end-line="2420" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="492" column="6" lean-forward="true" selection-start-line="492" selection-start-column="6" selection-end-line="492" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_video/TesteA.java" />
-    <entry file="file://$PROJECT_DIR$/out/production/curso_java/curso_video/ResolucaoTela.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_video/OlaMundoJX/src/olamundojx/OlaMundoJX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_video/OlaMundoJX/src/olamundojx/FXMLDocument.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_video/OlaMundoJX/src/olamundojx/FXMLDocumentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/ParImpar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Fatorial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Four.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Uale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Urionlinejudge1002.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/urionlinejudge1010.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/curso_nara/Urionlinejudge1013.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="31" />
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -535,6 +792,7 @@
     <states>
       <state key="ProjectJDKs.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
